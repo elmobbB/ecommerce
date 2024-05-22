@@ -70,3 +70,4 @@ class shippingAddress(models.Model):
 
    def __str__(self):
       return str(self.address)
+   
