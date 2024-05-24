@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom';
+import { Container } from 'react-bootstrap';
+import HomeScreen from "./screens/HomeScreen";
+import ProductScreen from "./screens/ProductScreen";
+import CartScreen from "./screens/CartScreen";
+import LoginScreen from "./screens/LoginScreen";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Header />
+      <main className="py-3">
+        <Container>
+          <Routes>
+            <Route path='/' element={<HomeScreen />} exact />
+            <Route path='/login' element={<LoginScreen />} />
+            <Route path='/product/:id' element={<ProductScreen />} />
+            <Route path='/cart/:id?' element={<CartScreen />} />
+            {/* dont always need to pass in an id */}
+          </Routes>
+        </Container>
+      </main>
+      <Footer />
+    </Router>
   );
 }
 
