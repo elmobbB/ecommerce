@@ -1,8 +1,7 @@
-myenv/
-=======
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
+node_modules
 /node_modules
 /.pnp
 .pnp.js
@@ -15,6 +14,7 @@ myenv/
 
 # misc
 .DS_Store
+.env
 .env.local
 .env.development.local
 .env.test.local
@@ -23,4 +23,9 @@ myenv/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
->>>>>>> 5747546c0918849aa5f6bcfa421fbd9c31402169
+frontend/build
+uploads/*png
+uploads/*jpg
+
+# API tests
+http
