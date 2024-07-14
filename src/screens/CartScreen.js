@@ -17,7 +17,6 @@ function CartScreen() {
 
     const cart = useSelector(state => state.cart)
     const { cartItems } = cart
-    console.log(id,"id@@")
     useEffect(() => {
         if (id) {
             dispatch(addToCart(id,qty))
@@ -32,7 +31,8 @@ function CartScreen() {
         dispatch(removeFromCart(id))
     }
     const checkoutHandler = () => {
-        navigate('/login?redirect=shipping')
+        // navigate('/login?redirect=shipping')
+        navigate('/shipping')
     }
 
     return (
