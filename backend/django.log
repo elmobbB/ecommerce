@@ -1,0 +1,951 @@
+INFO 2024-08-03 15:21:27,262 autoreload 14196 13344 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:21:51,326 log 14196 28572 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table base_order has no column named totalPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 31, in addOrderItems
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table base_order has no column named totalPrice
+ERROR 2024-08-03 15:21:51,348 basehttp 14196 28572 "POST /api/orders/add/ HTTP/1.1" 500 200247
+INFO 2024-08-03 15:23:37,735 autoreload 6364 3672 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:24:11,994 log 6364 26124 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table base_order has no column named totalPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 31, in addOrderItems
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table base_order has no column named totalPrice
+ERROR 2024-08-03 15:24:12,013 basehttp 6364 26124 "POST /api/orders/add/ HTTP/1.1" 500 200247
+INFO 2024-08-03 15:26:27,986 autoreload 28052 19080 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:26:48,352 log 28052 28480 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 33, in addOrderItems
+    paymentMethod=data['paymentMethod'],
+                  ~~~~^^^^^^^^^^^^^^^^^
+KeyError: 'paymentMethod'
+ERROR 2024-08-03 15:26:48,360 basehttp 28052 28480 "POST /api/orders/add/ HTTP/1.1" 500 105671
+INFO 2024-08-03 15:31:15,253 autoreload 28052 19080 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-03 15:31:15,917 autoreload 10420 20036 Watching for file changes with StatReloader
+INFO 2024-08-03 15:31:56,398 autoreload 10420 20036 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-03 15:31:57,143 autoreload 26404 25084 Watching for file changes with StatReloader
+INFO 2024-08-03 15:32:09,129 autoreload 26404 25084 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-03 15:32:09,798 autoreload 27280 8424 Watching for file changes with StatReloader
+INFO 2024-08-03 15:32:15,434 autoreload 27280 8424 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-03 15:32:16,168 autoreload 12104 15736 Watching for file changes with StatReloader
+INFO 2024-08-03 15:32:20,998 autoreload 12104 15736 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-03 15:32:21,794 autoreload 25924 28040 Watching for file changes with StatReloader
+INFO 2024-08-03 15:32:27,447 autoreload 25924 28040 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-03 15:32:28,177 autoreload 27080 20668 Watching for file changes with StatReloader
+INFO 2024-08-03 15:32:43,580 autoreload 27080 20668 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-03 15:32:44,354 autoreload 14856 26288 Watching for file changes with StatReloader
+INFO 2024-08-03 15:32:53,373 autoreload 14856 26288 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-03 15:32:54,152 autoreload 27772 27548 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:32:58,527 log 27772 5784 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table base_order has no column named totalPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 44, in addOrderItems
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table base_order has no column named totalPrice
+ERROR 2024-08-03 15:32:58,548 basehttp 27772 5784 "POST /api/orders/add/ HTTP/1.1" 500 200245
+ERROR 2024-08-03 15:33:04,265 log 27772 14560 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table base_order has no column named totalPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 44, in addOrderItems
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table base_order has no column named totalPrice
+ERROR 2024-08-03 15:33:04,297 basehttp 27772 14560 "POST /api/orders/add/ HTTP/1.1" 500 200461
+ERROR 2024-08-03 15:33:13,474 log 27772 16848 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table base_order has no column named totalPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 44, in addOrderItems
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table base_order has no column named totalPrice
+ERROR 2024-08-03 15:33:13,490 basehttp 27772 16848 "POST /api/orders/add/ HTTP/1.1" 500 200461
+INFO 2024-08-03 15:33:29,567 basehttp 27772 4500 "GET /api/products/ HTTP/1.1" 200 2458
+INFO 2024-08-03 15:33:29,580 basehttp 27772 14324 "GET /api/products/ HTTP/1.1" 200 2458
+ERROR 2024-08-03 15:33:43,345 log 27772 21060 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: table base_order has no column named totalPrice
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 44, in addOrderItems
+    order = Order.objects.create(
+            ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 679, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 822, in save
+    self.save_base(
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 909, in save_base
+    updated = self._save_table(
+              ^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1071, in _save_table
+    results = self._do_insert(
+              ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\base.py", line 1112, in _do_insert
+    return manager._insert(
+           ^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1847, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1823, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: table base_order has no column named totalPrice
+ERROR 2024-08-03 15:33:43,370 basehttp 27772 21060 "POST /api/orders/add/ HTTP/1.1" 500 200461
+INFO 2024-08-03 15:34:12,525 autoreload 27772 27548 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-03 15:34:13,287 autoreload 13844 15552 Watching for file changes with StatReloader
+INFO 2024-08-03 15:49:14,463 autoreload 14856 6156 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:49:20,477 log 14856 14940 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 73, in addOrderItems
+    logger.debug(f"Debug: serializer.data = {serializer.data}")
+                                             ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\fields.py", line 1872, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\serializers.py", line 66, in get_orderItems
+    items = obj.orderItem_set.all()
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'orderItem_set'. Did you mean: 'orderitem_set'?
+ERROR 2024-08-03 15:49:20,489 basehttp 14856 14940 "POST /api/orders/add/ HTTP/1.1" 500 134287
+ERROR 2024-08-03 15:49:23,201 log 14856 20304 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 73, in addOrderItems
+    logger.debug(f"Debug: serializer.data = {serializer.data}")
+                                             ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\fields.py", line 1872, in to_representation
+    return method(value)
+           ^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\serializers.py", line 66, in get_orderItems
+    items = obj.orderItem_set.all()
+            ^^^^^^^^^^^^^^^^^
+AttributeError: 'Order' object has no attribute 'orderItem_set'. Did you mean: 'orderitem_set'?
+ERROR 2024-08-03 15:49:23,227 basehttp 14856 20304 "POST /api/orders/add/ HTTP/1.1" 500 134349
+INFO 2024-08-03 15:49:50,835 autoreload 14856 6156 C:\Users\Claire\ecommerce\backend\base\serializers.py changed, reloading.
+INFO 2024-08-03 15:49:51,518 autoreload 11932 28940 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:49:54,172 log 11932 9280 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 73, in addOrderItems
+    logger.debug(f"Debug: serializer.data = {serializer.data}")
+                                             ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\fields.py", line 1871, in to_representation
+    method = getattr(self.parent, self.method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OrderSerializer' object has no attribute 'get_ShippingAddress'. Did you mean: 'get_shippingAddress'?
+ERROR 2024-08-03 15:49:54,183 basehttp 11932 9280 "POST /api/orders/add/ HTTP/1.1" 500 128514
+INFO 2024-08-03 15:51:02,475 autoreload 11932 28940 C:\Users\Claire\ecommerce\backend\base\serializers.py changed, reloading.
+INFO 2024-08-03 15:51:03,100 autoreload 19032 18304 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:51:05,621 log 19032 14908 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 73, in addOrderItems
+    logger.debug(f"Debug: serializer.data = {serializer.data}")
+                                             ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\fields.py", line 1871, in to_representation
+    method = getattr(self.parent, self.method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OrderSerializer' object has no attribute 'get_ShippingAddress'. Did you mean: 'get_shippingAddress'?
+ERROR 2024-08-03 15:51:05,631 basehttp 19032 14908 "POST /api/orders/add/ HTTP/1.1" 500 128514
+INFO 2024-08-03 15:51:38,305 autoreload 25740 8332 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:51:40,762 log 25740 8540 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 73, in addOrderItems
+    logger.debug(f"Debug: serializer.data = {serializer.data}")
+                                             ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\fields.py", line 1871, in to_representation
+    method = getattr(self.parent, self.method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OrderSerializer' object has no attribute 'get_ShippingAddress'. Did you mean: 'get_shippingAddress'?
+ERROR 2024-08-03 15:51:40,773 basehttp 25740 8540 "POST /api/orders/add/ HTTP/1.1" 500 128514
+INFO 2024-08-03 15:52:10,914 autoreload 25740 8332 C:\Users\Claire\ecommerce\backend\base\serializers.py changed, reloading.
+INFO 2024-08-03 15:52:11,553 autoreload 16040 22600 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:53:25,008 log 16040 24552 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 73, in addOrderItems
+    logger.debug(f"Debug: serializer.data = {serializer.data}")
+                                             ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\fields.py", line 1871, in to_representation
+    method = getattr(self.parent, self.method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OrderSerializer' object has no attribute 'get_ShippingAddress'. Did you mean: 'get_shippingAddress'?
+ERROR 2024-08-03 15:53:25,018 basehttp 16040 24552 "POST /api/orders/add/ HTTP/1.1" 500 128514
+INFO 2024-08-03 15:58:55,642 autoreload 29136 12676 Watching for file changes with StatReloader
+ERROR 2024-08-03 15:58:59,986 log 29136 18456 Internal Server Error: /api/orders/add/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 73, in addOrderItems
+    logger.debug(f"Debug: serializer.data = {serializer.data}")
+                                             ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 571, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 538, in to_representation
+    ret[field.field_name] = field.to_representation(attribute)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\fields.py", line 1871, in to_representation
+    method = getattr(self.parent, self.method_name)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'OrderSerializer' object has no attribute 'get_ShippingAddress'. Did you mean: 'get_shippingAddress'?
+ERROR 2024-08-03 15:58:59,998 basehttp 29136 18456 "POST /api/orders/add/ HTTP/1.1" 500 128452
+INFO 2024-08-03 16:01:46,062 autoreload 29136 12676 C:\Users\Claire\ecommerce\backend\base\serializers.py changed, reloading.
+INFO 2024-08-03 16:01:46,798 autoreload 27896 28128 Watching for file changes with StatReloader
+INFO 2024-08-03 16:01:54,257 basehttp 27896 22672 "POST /api/orders/add/ HTTP/1.1" 200 573
+INFO 2024-08-03 16:02:20,512 autoreload 27896 28128 C:\Users\Claire\ecommerce\backend\base\serializers.py changed, reloading.
+INFO 2024-08-03 16:02:21,165 autoreload 21948 16364 Watching for file changes with StatReloader
+INFO 2024-08-03 16:02:46,116 autoreload 21948 16364 C:\Users\Claire\ecommerce\backend\base\serializers.py changed, reloading.
+INFO 2024-08-03 16:02:46,888 autoreload 25244 27676 Watching for file changes with StatReloader
+INFO 2024-08-03 16:03:04,908 basehttp 25244 3756 "GET /api/products/ HTTP/1.1" 200 2537
+INFO 2024-08-03 16:03:04,922 basehttp 25244 14260 "GET /api/products/ HTTP/1.1" 200 2537
+INFO 2024-08-03 16:03:06,328 basehttp 25244 2396 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-03 16:03:06,338 basehttp 25244 27936 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-03 16:03:08,729 basehttp 25244 23880 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-03 16:03:08,744 basehttp 25244 28376 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-03 16:03:20,692 basehttp 25244 25128 "POST /api/orders/add/ HTTP/1.1" 200 583
+WARNING 2024-08-03 16:03:31,819 log 25244 10100 Not Found: /
+WARNING 2024-08-03 16:03:31,819 basehttp 25244 10100 "GET / HTTP/1.1" 404 2521
+WARNING 2024-08-03 16:03:41,159 log 25244 10100 Unauthorized: /api/users/
+WARNING 2024-08-03 16:03:41,160 basehttp 25244 10100 "GET /api/users/ HTTP/1.1" 401 5039
+WARNING 2024-08-03 16:03:43,481 log 25244 10100 Method Not Allowed: /api/users/login/
+WARNING 2024-08-03 16:03:43,482 basehttp 25244 10100 "GET /api/users/login/ HTTP/1.1" 405 7621
+INFO 2024-08-03 16:03:50,664 basehttp 25244 10100 "POST /api/users/login/ HTTP/1.1" 200 8625
+WARNING 2024-08-03 16:03:55,246 log 25244 10100 Unauthorized: /api/users/login/
+WARNING 2024-08-03 16:03:55,247 basehttp 25244 10100 "POST /api/users/login/ HTTP/1.1" 401 7701
+WARNING 2024-08-03 16:04:06,952 log 25244 10100 Unauthorized: /api/users/login/
+WARNING 2024-08-03 16:04:06,953 basehttp 25244 10100 "POST /api/users/login/ HTTP/1.1" 401 7701
+WARNING 2024-08-03 16:04:19,211 log 25244 10100 Unauthorized: /api/users/login/
+WARNING 2024-08-03 16:04:19,212 basehttp 25244 10100 "POST /api/users/login/ HTTP/1.1" 401 7701
+WARNING 2024-08-03 16:04:25,930 log 25244 10100 Unauthorized: /api/users/login/
+WARNING 2024-08-03 16:04:25,931 basehttp 25244 10100 "POST /api/users/login/ HTTP/1.1" 401 7701
+WARNING 2024-08-03 16:04:32,098 log 25244 10100 Unauthorized: /api/users/login/
+WARNING 2024-08-03 16:04:32,099 basehttp 25244 10100 "POST /api/users/login/ HTTP/1.1" 401 7701
+INFO 2024-08-03 16:04:37,628 basehttp 25244 11912 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-03 16:04:37,639 basehttp 25244 11508 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-03 16:04:37,651 basehttp 25244 12240 "GET /api/users/profile/ HTTP/1.1" 200 98
+WARNING 2024-08-03 16:04:45,372 log 25244 17024 Unauthorized: /api/users/login/
+WARNING 2024-08-03 16:04:45,373 basehttp 25244 17024 "POST /api/users/login/ HTTP/1.1" 401 63
+INFO 2024-08-03 16:04:54,526 basehttp 25244 22112 "POST /api/users/login/ HTTP/1.1" 200 826
+INFO 2024-08-03 16:04:54,578 basehttp 25244 5488 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-03 16:04:54,592 basehttp 25244 4768 "GET /api/products/ HTTP/1.1" 200 2536
+WARNING 2024-08-03 16:05:05,644 log 25244 18440 Unauthorized: /api/users/login/
+WARNING 2024-08-03 16:05:05,646 basehttp 25244 18440 "POST /api/users/login/ HTTP/1.1" 401 63
+INFO 2024-08-03 16:05:10,104 basehttp 25244 20012 "POST /api/users/login/ HTTP/1.1" 200 819
+INFO 2024-08-03 16:05:10,182 basehttp 25244 19380 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-03 16:05:10,202 basehttp 25244 1748 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-03 16:05:26,929 basehttp 25244 10100 "POST /api/users/login/ HTTP/1.1" 200 8625
+INFO 2024-08-03 16:05:41,214 basehttp 25244 22512 "GET /api/users HTTP/1.1" 301 0
+INFO 2024-08-03 16:05:41,220 basehttp 25244 24400 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-03 16:05:45,114 log 25244 24400 Not Found: /api/orders/add/8
+WARNING 2024-08-03 16:05:45,115 basehttp 25244 24400 "POST /api/orders/add/8 HTTP/1.1" 404 2658
+WARNING 2024-08-03 16:05:51,719 log 25244 24400 Not Found: /api/orders/add/8
+WARNING 2024-08-03 16:05:51,720 basehttp 25244 24400 "POST /api/orders/add/8 HTTP/1.1" 404 2658
+INFO 2024-08-03 16:06:09,165 basehttp 25244 6400 "POST /api/orders/add/ HTTP/1.1" 200 584
+INFO 2024-08-03 16:06:19,084 basehttp 25244 29072 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-03 16:06:19,109 basehttp 25244 24212 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-03 16:06:31,806 basehttp 25244 29228 "POST /api/users/login/ HTTP/1.1" 200 819
+INFO 2024-08-03 16:06:31,872 basehttp 25244 13044 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-03 16:06:31,891 basehttp 25244 7652 "GET /api/products/ HTTP/1.1" 200 2536

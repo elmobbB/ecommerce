@@ -9,10 +9,4 @@ class Migration(migrations.Migration):
         ('base', '0003_product_image'),
     ]
 
-    operations = [
-        migrations.RenameField(
-            model_name='product',
-            old_name='countInstock',
-            new_name='countInStock',
-        ),
-    ]
+    operations = []
