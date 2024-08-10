@@ -10,7 +10,7 @@ from base.serializers import ProductSerializer, OrderSerializer
 from rest_framework import status
 from datetime import datetime
 import logging
-
+from datetime import datetime
 
 logger = logging.getLogger(__name__)
 
@@ -73,3 +73,32 @@ def addOrderItems(request):
         logger.debug(f"Debug: serializer.data = {serializer.data}")
 
         return Response(serializer.data)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getOrderById(request, pk): #pk = primary key
+
+    user = request.user
+
+    order = Order.objects.get(_id = pk) # by the order by id
+    
+    #two type of user to see user, buyer&staff
+    try:
+        if user.is_staff or order.user == user:
+            serializer = OrderSerializer(order, many=False)  #serial data , get one order , many is false
+            return Response(serializer.data)
+        else:
+            Response({'detail': "Not authorized to view this order"}, status= status.HTTP_400_BAD_REQUEST) 
+    except:
+        return Response({'detail':'Order does not exist'}, status= status.HTTP_400_BAD_REQUEST)
+
+@api_view(['PUT'])
+@permission_classes([IsAuthenticated])
+def updateOrderToPaid(request, pk):
+    order = Order.objects.get(_id=pk)
+
+    order.isPaid = True
+    order.paidAt = datetime.now()
+    order.save()
+    
+    return Response('Order was paid')
