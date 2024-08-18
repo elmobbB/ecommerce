@@ -73,6 +73,15 @@ def addOrderItems(request):
         logger.debug(f"Debug: serializer.data = {serializer.data}")
 
         return Response(serializer.data)
+    
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def getMyOrders(request):
+    user =request.user
+    orders = user.order_set.all()  #get all user order then serialize them
+    serializer = OrderSerializer(orders,many = True)
+    return Response(serializer.data)
+
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])

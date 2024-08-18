@@ -1534,3 +1534,1367 @@ INFO 2024-08-10 12:52:47,517 basehttp 2996 8360 "POST /api/orders/add/ HTTP/1.1"
 INFO 2024-08-10 12:52:47,594 basehttp 2996 35252 "GET /api/orders/23/ HTTP/1.1" 200 577
 INFO 2024-08-10 12:52:47,614 basehttp 2996 23744 "GET /api/orders/23/ HTTP/1.1" 200 577
 INFO 2024-08-10 13:33:28,328 autoreload 6688 12324 Watching for file changes with StatReloader
+INFO 2024-08-10 13:34:51,246 basehttp 6688 13484 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:34:51,266 basehttp 6688 16304 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:40:26,471 basehttp 6688 5228 "GET /admin/base/order/ HTTP/1.1" 200 10834
+INFO 2024-08-10 13:40:26,532 basehttp 6688 5228 "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-08-10 13:40:26,532 basehttp 6688 11272 "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-08-10 13:40:26,533 basehttp 6688 2472 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-08-10 13:40:26,539 basehttp 6688 11272 "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-08-10 13:40:26,569 basehttp 6688 5228 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 13:40:26,644 basehttp 6688 2472 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-08-10 13:40:26,668 basehttp 6688 2472 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-08-10 13:40:26,694 basehttp 6688 2472 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-08-10 13:40:26,708 basehttp 6688 5228 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-08-10 13:40:26,718 basehttp 6688 2472 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-08-10 13:40:26,733 basehttp 6688 5228 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-08-10 13:40:26,736 basehttp 6688 11272 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-08-10 13:40:26,741 basehttp 6688 2472 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-08-10 13:40:26,758 basehttp 6688 2472 "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-08-10 13:40:26,764 basehttp 6688 2472 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-08-10 13:40:26,781 basehttp 6688 2472 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-08-10 13:40:26,831 basehttp 6688 11272 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-08-10 13:40:26,866 basehttp 6688 2472 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2024-08-10 13:40:26,875 basehttp 6688 11272 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+WARNING 2024-08-10 13:40:27,171 log 6688 11272 Not Found: /favicon.ico
+WARNING 2024-08-10 13:40:27,172 basehttp 6688 11272 "GET /favicon.ico HTTP/1.1" 404 2572
+INFO 2024-08-10 13:43:41,798 basehttp 6688 10104 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:41,813 basehttp 6688 9412 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:43,378 basehttp 6688 6760 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:43:43,394 basehttp 6688 10624 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:43:45,099 basehttp 6688 3768 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:45,118 basehttp 6688 12620 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:46,074 basehttp 6688 12664 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:43:46,088 basehttp 6688 11196 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:43:47,855 basehttp 6688 19492 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:47,869 basehttp 6688 6572 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:49,002 basehttp 6688 18124 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 13:43:49,013 basehttp 6688 2056 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 13:43:49,695 basehttp 6688 2172 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:49,709 basehttp 6688 3496 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:50,698 basehttp 6688 16432 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:43:50,708 basehttp 6688 21560 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:43:51,932 basehttp 6688 12328 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:51,945 basehttp 6688 5300 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:52,733 basehttp 6688 3116 "GET /api/products/4 HTTP/1.1" 200 397
+INFO 2024-08-10 13:43:52,747 basehttp 6688 9004 "GET /api/products/4 HTTP/1.1" 200 397
+INFO 2024-08-10 13:43:53,412 basehttp 6688 9012 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:53,423 basehttp 6688 12380 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:54,321 basehttp 6688 12112 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 13:43:54,332 basehttp 6688 11972 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 13:43:55,102 basehttp 6688 13056 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:55,120 basehttp 6688 12152 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:56,022 basehttp 6688 13724 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:43:56,031 basehttp 6688 22932 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:43:56,587 basehttp 6688 21448 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:56,626 basehttp 6688 15796 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:57,477 basehttp 6688 13236 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 13:43:57,489 basehttp 6688 21356 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 13:43:58,096 basehttp 6688 10968 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:58,114 basehttp 6688 7060 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:43:59,445 basehttp 6688 13276 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 13:43:59,457 basehttp 6688 20268 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 13:44:00,096 basehttp 6688 10272 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:44:00,117 basehttp 6688 21208 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:44:00,912 basehttp 6688 19308 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 13:44:00,925 basehttp 6688 17516 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 13:44:01,700 basehttp 6688 12416 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:44:01,716 basehttp 6688 15804 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:44:03,585 basehttp 6688 23044 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:44:03,597 basehttp 6688 11372 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:44:09,328 basehttp 6688 11272 "GET /admin/base/order/ HTTP/1.1" 200 10834
+INFO 2024-08-10 13:44:09,392 basehttp 6688 11272 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 13:44:11,296 basehttp 6688 11272 "GET /admin/base/product/ HTTP/1.1" 200 11462
+INFO 2024-08-10 13:44:11,363 basehttp 6688 11272 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 13:44:17,219 basehttp 6688 11272 "GET /admin/base/product/3/change/ HTTP/1.1" 200 17146
+INFO 2024-08-10 13:44:17,284 basehttp 6688 11272 "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2024-08-10 13:44:17,284 basehttp 6688 5228 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2024-08-10 13:44:17,288 basehttp 6688 2472 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 13:44:17,290 basehttp 6688 5228 "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2024-08-10 13:44:17,295 basehttp 6688 5228 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-08-10 13:44:17,297 basehttp 6688 5228 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 304 0
+INFO 2024-08-10 13:44:17,308 basehttp 6688 2472 "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2024-08-10 13:44:17,308 basehttp 6688 5228 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-08-10 13:44:28,490 basehttp 6688 5228 "POST /admin/base/product/3/change/ HTTP/1.1" 302 0
+INFO 2024-08-10 13:44:28,515 basehttp 6688 5228 "GET /admin/base/product/ HTTP/1.1" 200 11682
+INFO 2024-08-10 13:44:28,589 basehttp 6688 5228 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 13:44:28,604 basehttp 6688 5228 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 304 0
+INFO 2024-08-10 13:44:31,120 basehttp 6688 13704 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:44:31,132 basehttp 6688 11484 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:44:34,910 basehttp 6688 15524 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:44:34,921 basehttp 6688 13548 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:44:39,529 basehttp 6688 21800 "POST /api/orders/add/ HTTP/1.1" 200 578
+INFO 2024-08-10 13:44:39,566 basehttp 6688 7100 "GET /api/orders/24/ HTTP/1.1" 200 578
+INFO 2024-08-10 13:44:39,580 basehttp 6688 4112 "GET /api/orders/24/ HTTP/1.1" 200 578
+INFO 2024-08-10 13:45:39,664 basehttp 6688 9448 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:45:39,681 basehttp 6688 12544 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:45:41,944 basehttp 6688 23336 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:45:41,959 basehttp 6688 15908 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:45:42,953 basehttp 6688 11580 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:45:42,967 basehttp 6688 10928 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:45:47,516 basehttp 6688 12236 "POST /api/orders/add/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:45:47,555 basehttp 6688 12428 "GET /api/orders/25/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:45:47,568 basehttp 6688 14684 "GET /api/orders/25/ HTTP/1.1" 200 576
+WARNING 2024-08-10 13:47:24,613 log 6688 11136 Not Found: /main.5c090a4e0935cb4c9fb4.hot-update.json
+WARNING 2024-08-10 13:47:24,614 basehttp 6688 11136 "GET /main.5c090a4e0935cb4c9fb4.hot-update.json HTTP/1.1" 404 2662
+INFO 2024-08-10 13:47:25,034 basehttp 6688 3256 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:47:25,049 basehttp 6688 2960 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:52:26,121 basehttp 6688 3244 "GET /api/orders/25/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:52:26,138 basehttp 6688 16840 "GET /api/orders/25/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:52:54,765 basehttp 6688 8844 "GET /api/orders/25/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:52:54,778 basehttp 6688 17304 "GET /api/orders/25/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:52:57,134 basehttp 6688 23324 "GET /api/orders/25/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:52:57,147 basehttp 6688 22448 "GET /api/orders/25/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:52:59,187 basehttp 6688 11304 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:52:59,201 basehttp 6688 19992 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 13:53:00,704 basehttp 6688 1264 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:53:00,715 basehttp 6688 11136 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:53:01,516 basehttp 6688 6564 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:53:01,531 basehttp 6688 1384 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 13:53:07,555 basehttp 6688 1116 "POST /api/orders/add/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:53:07,592 basehttp 6688 22272 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:53:07,607 basehttp 6688 11080 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:56:10,565 basehttp 6688 20672 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:56:10,580 basehttp 6688 19044 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:56:15,657 basehttp 6688 1840 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:56:15,672 basehttp 6688 1220 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:56:23,258 basehttp 6688 11120 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:56:23,300 basehttp 6688 1016 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:58:38,720 basehttp 6688 7836 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 13:58:38,733 basehttp 6688 1252 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:00:37,304 basehttp 6688 23384 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:00:37,317 basehttp 6688 19172 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:00:43,417 basehttp 6688 13208 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:00:43,480 basehttp 6688 1432 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:03:54,874 basehttp 6688 19744 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:03:54,886 basehttp 6688 21392 "GET /api/orders/26/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:03:58,627 basehttp 6688 16000 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:03:58,642 basehttp 6688 12172 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:04:00,271 basehttp 6688 14612 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:04:00,283 basehttp 6688 1396 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:04:01,255 basehttp 6688 11396 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:04:01,266 basehttp 6688 3404 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:04:07,640 basehttp 6688 21196 "POST /api/orders/add/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:04:07,683 basehttp 6688 3900 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:04:07,698 basehttp 6688 13020 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:05:40,887 basehttp 6688 12552 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:05:40,904 basehttp 6688 19860 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:11:52,567 basehttp 6688 1932 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:11:52,582 basehttp 6688 12240 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:12:53,001 basehttp 6688 9712 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:12:53,015 basehttp 6688 4692 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:14:08,830 basehttp 6688 23548 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:14:08,845 basehttp 6688 16608 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:15:10,253 basehttp 6688 23016 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:15:10,265 basehttp 6688 14692 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:16:57,116 basehttp 6688 6520 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:16:57,129 basehttp 6688 16968 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:17:02,069 basehttp 6688 21240 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:17:02,083 basehttp 6688 384 "GET /api/orders/27/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:17:12,621 basehttp 6688 12704 "GET /admin/base/order/ HTTP/1.1" 200 12082
+INFO 2024-08-10 14:17:12,676 basehttp 6688 12704 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:17:19,988 basehttp 6688 12704 "POST /admin/base/order/ HTTP/1.1" 302 0
+INFO 2024-08-10 14:17:20,015 basehttp 6688 12704 "GET /admin/base/order/ HTTP/1.1" 200 12207
+INFO 2024-08-10 14:17:20,078 basehttp 6688 12704 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:17:20,116 basehttp 6688 12704 "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+INFO 2024-08-10 14:17:25,265 basehttp 6688 12704 "POST /admin/base/order/ HTTP/1.1" 200 10624
+INFO 2024-08-10 14:17:25,316 basehttp 6688 12704 "GET /static/admin/js/cancel.js HTTP/1.1" 304 0
+INFO 2024-08-10 14:17:26,883 basehttp 6688 12704 "POST /admin/base/order/ HTTP/1.1" 302 0
+INFO 2024-08-10 14:17:26,900 basehttp 6688 12704 "GET /admin/base/order/ HTTP/1.1" 200 8724
+INFO 2024-08-10 14:17:26,960 basehttp 6688 12704 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+ERROR 2024-08-10 14:17:29,385 log 6688 22284 Internal Server Error: /api/orders/27/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 83, in getOrderById
+    order = Order.objects.get(_id = pk) # by the order by id
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+base.models.Order.DoesNotExist: Order matching query does not exist.
+ERROR 2024-08-10 14:17:29,393 basehttp 6688 22284 "GET /api/orders/27/ HTTP/1.1" 500 113377
+ERROR 2024-08-10 14:17:29,430 log 6688 3924 Internal Server Error: /api/orders/27/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 83, in getOrderById
+    order = Order.objects.get(_id = pk) # by the order by id
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+base.models.Order.DoesNotExist: Order matching query does not exist.
+ERROR 2024-08-10 14:17:29,438 basehttp 6688 3924 "GET /api/orders/27/ HTTP/1.1" 500 113377
+INFO 2024-08-10 14:17:31,392 basehttp 6688 9788 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:17:31,408 basehttp 6688 23300 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:17:32,630 basehttp 6688 1432 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:17:32,656 basehttp 6688 23512 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:17:34,011 basehttp 6688 18448 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:17:34,023 basehttp 6688 5852 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:17:38,991 basehttp 6688 18684 "POST /api/orders/add/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:17:39,050 basehttp 6688 18884 "GET /api/orders/28/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:17:39,082 basehttp 6688 5476 "GET /api/orders/28/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:17:43,682 basehttp 6688 12704 "GET /admin/base/order/ HTTP/1.1" 200 9897
+INFO 2024-08-10 14:17:43,735 basehttp 6688 12704 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:17:44,780 basehttp 6688 12704 "GET /admin/base/order/ HTTP/1.1" 200 9897
+INFO 2024-08-10 14:17:44,836 basehttp 6688 12704 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:17:46,411 basehttp 6688 12704 "GET /admin/base/order/28/change/ HTTP/1.1" 200 16320
+INFO 2024-08-10 14:17:46,469 basehttp 6688 15388 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:17:46,483 basehttp 6688 4812 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2024-08-10 14:17:46,483 basehttp 6688 12704 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2024-08-10 14:17:46,540 basehttp 6688 4812 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-08-10 14:17:46,540 basehttp 6688 12704 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-08-10 14:18:20,842 basehttp 6688 4420 "GET /api/orders/28/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:18:20,857 basehttp 6688 2748 "GET /api/orders/28/ HTTP/1.1" 200 576
+INFO 2024-08-10 14:27:41,545 basehttp 6688 15472 "PUT /api/orders/28/pay/ HTTP/1.1" 200 16
+INFO 2024-08-10 14:27:41,585 basehttp 6688 12616 "GET /api/orders/28/ HTTP/1.1" 200 600
+INFO 2024-08-10 14:30:48,443 basehttp 6688 20804 "GET /admin/base/order/28/change/ HTTP/1.1" 200 16364
+INFO 2024-08-10 14:30:48,492 basehttp 6688 20804 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:33:23,478 basehttp 6688 3504 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:33:23,501 basehttp 6688 9324 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:33:29,766 basehttp 6688 18860 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:33:29,779 basehttp 6688 19744 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:33:31,282 basehttp 6688 22848 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 14:33:31,293 basehttp 6688 12184 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 14:33:32,855 basehttp 6688 4308 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:33:32,867 basehttp 6688 21752 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:33:33,694 basehttp 6688 1660 "GET /api/products/4 HTTP/1.1" 200 397
+INFO 2024-08-10 14:33:33,702 basehttp 6688 12320 "GET /api/products/4 HTTP/1.1" 200 397
+INFO 2024-08-10 14:33:36,806 basehttp 6688 11488 "GET /api/products/4 HTTP/1.1" 200 397
+INFO 2024-08-10 14:33:36,816 basehttp 6688 13228 "GET /api/products/4 HTTP/1.1" 200 397
+INFO 2024-08-10 14:33:41,988 basehttp 6688 19164 "POST /api/orders/add/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:33:42,030 basehttp 6688 9088 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:33:42,043 basehttp 6688 5300 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:35:46,561 basehttp 6688 3848 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:35:46,574 basehttp 6688 17724 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:35:47,531 basehttp 6688 6468 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:35:47,543 basehttp 6688 11124 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:35:48,334 basehttp 6688 12056 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:35:48,346 basehttp 6688 9396 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:35:48,851 basehttp 6688 22388 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:35:48,864 basehttp 6688 8044 "GET /api/orders/29/ HTTP/1.1" 200 592
+INFO 2024-08-10 14:35:50,464 basehttp 6688 12108 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:50,476 basehttp 6688 15720 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:51,730 basehttp 6688 7044 "GET /api/products/4 HTTP/1.1" 200 397
+INFO 2024-08-10 14:35:51,741 basehttp 6688 3428 "GET /api/products/4 HTTP/1.1" 200 397
+INFO 2024-08-10 14:35:53,401 basehttp 6688 19356 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:53,413 basehttp 6688 21692 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:55,234 basehttp 6688 4372 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 14:35:55,246 basehttp 6688 18340 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 14:35:56,015 basehttp 6688 17524 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:56,029 basehttp 6688 4804 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:56,799 basehttp 6688 13388 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:35:56,808 basehttp 6688 22116 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:35:57,536 basehttp 6688 11164 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:57,551 basehttp 6688 1168 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:58,342 basehttp 6688 1100 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:35:58,350 basehttp 6688 16476 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:35:59,036 basehttp 6688 3992 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:59,051 basehttp 6688 6544 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:35:59,820 basehttp 6688 3012 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 14:35:59,832 basehttp 6688 7864 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 14:36:00,478 basehttp 6688 18436 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:36:00,507 basehttp 6688 22196 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:36:01,346 basehttp 6688 15748 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 14:36:01,357 basehttp 6688 1064 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 14:36:01,823 basehttp 6688 1192 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:36:01,839 basehttp 6688 12064 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:36:02,993 basehttp 6688 17444 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:36:03,002 basehttp 6688 19520 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:36:06,739 basehttp 6688 11192 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:36:06,749 basehttp 6688 20548 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:36:12,318 basehttp 6688 20448 "POST /api/orders/add/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:36:12,356 basehttp 6688 6264 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:36:12,369 basehttp 6688 3924 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:39:38,227 basehttp 6688 20604 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:39:38,244 basehttp 6688 16432 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:40:07,264 basehttp 6688 20548 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:40:07,281 basehttp 6688 21100 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:40:39,073 basehttp 6688 2952 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:40:39,089 basehttp 6688 3688 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:40:49,710 basehttp 6688 13100 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:40:49,732 basehttp 6688 20448 "GET /api/orders/30/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:40:56,836 basehttp 6688 3300 "GET /admin/base/order/ HTTP/1.1" 200 10522
+INFO 2024-08-10 14:40:56,900 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:05,847 basehttp 6688 3300 "POST /admin/base/order/ HTTP/1.1" 200 9329
+INFO 2024-08-10 14:41:09,609 basehttp 6688 3300 "POST /admin/base/order/ HTTP/1.1" 302 0
+INFO 2024-08-10 14:41:09,626 basehttp 6688 3300 "GET /admin/base/order/ HTTP/1.1" 200 8724
+INFO 2024-08-10 14:41:09,683 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:10,435 basehttp 6688 3300 "GET /admin/base/order/ HTTP/1.1" 200 8588
+INFO 2024-08-10 14:41:10,487 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:13,717 basehttp 6688 14696 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:13,731 basehttp 6688 1000 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:14,987 basehttp 6688 14856 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 14:41:14,998 basehttp 6688 22740 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 14:41:16,811 basehttp 6688 17560 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:16,824 basehttp 6688 15796 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:17,617 basehttp 6688 16932 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 14:41:17,628 basehttp 6688 21552 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 14:41:18,532 basehttp 6688 13260 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:18,545 basehttp 6688 14896 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:20,482 basehttp 6688 20900 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:41:20,494 basehttp 6688 12860 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:41:21,612 basehttp 6688 18280 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:21,627 basehttp 6688 19972 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:23,082 basehttp 6688 22428 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 14:41:23,092 basehttp 6688 364 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 14:41:24,471 basehttp 6688 1660 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:24,484 basehttp 6688 20052 "GET /api/products/ HTTP/1.1" 200 2535
+INFO 2024-08-10 14:41:25,769 basehttp 6688 1260 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:41:25,781 basehttp 6688 18520 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:41:31,622 basehttp 6688 3300 "GET /admin/base/product/ HTTP/1.1" 200 11462
+INFO 2024-08-10 14:41:31,680 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:33,379 basehttp 6688 3300 "GET /admin/base/product/6/change/ HTTP/1.1" 200 17150
+INFO 2024-08-10 14:41:33,441 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:42,803 basehttp 6688 3300 "GET /admin/base/product/ HTTP/1.1" 200 11462
+INFO 2024-08-10 14:41:42,865 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:43,969 basehttp 6688 3300 "GET /admin/base/product/6/change/ HTTP/1.1" 200 17150
+INFO 2024-08-10 14:41:44,025 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:48,516 basehttp 6688 3300 "POST /admin/base/product/6/change/ HTTP/1.1" 302 0
+INFO 2024-08-10 14:41:48,537 basehttp 6688 3300 "GET /admin/base/product/ HTTP/1.1" 200 11686
+INFO 2024-08-10 14:41:48,596 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:50,154 basehttp 6688 3300 "GET /admin/base/product/5/change/ HTTP/1.1" 200 17168
+INFO 2024-08-10 14:41:50,217 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:55,009 basehttp 6688 3300 "POST /admin/base/product/5/change/ HTTP/1.1" 302 0
+INFO 2024-08-10 14:41:55,029 basehttp 6688 3300 "GET /admin/base/product/ HTTP/1.1" 200 11686
+INFO 2024-08-10 14:41:55,080 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:57,131 basehttp 6688 3300 "GET /admin/base/product/4/change/ HTTP/1.1" 200 17164
+INFO 2024-08-10 14:41:57,193 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:41:59,798 basehttp 6688 3300 "POST /admin/base/product/4/change/ HTTP/1.1" 302 0
+INFO 2024-08-10 14:41:59,819 basehttp 6688 3300 "GET /admin/base/product/ HTTP/1.1" 200 11692
+INFO 2024-08-10 14:41:59,875 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:42:01,884 basehttp 6688 3300 "GET /admin/base/product/1/change/ HTTP/1.1" 200 17234
+INFO 2024-08-10 14:42:01,933 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:42:06,024 basehttp 6688 3300 "POST /admin/base/product/1/change/ HTTP/1.1" 302 0
+INFO 2024-08-10 14:42:06,045 basehttp 6688 3300 "GET /admin/base/product/ HTTP/1.1" 200 11693
+INFO 2024-08-10 14:42:06,098 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:42:08,429 basehttp 6688 1092 "GET /api/products/6 HTTP/1.1" 200 408
+INFO 2024-08-10 14:42:08,438 basehttp 6688 22944 "GET /api/products/6 HTTP/1.1" 200 408
+INFO 2024-08-10 14:42:14,858 basehttp 6688 14356 "GET /api/products/6 HTTP/1.1" 200 408
+INFO 2024-08-10 14:42:14,872 basehttp 6688 21620 "GET /api/products/6 HTTP/1.1" 200 408
+INFO 2024-08-10 14:42:21,166 basehttp 6688 21700 "POST /api/orders/add/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:42:21,215 basehttp 6688 15044 "GET /api/orders/31/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:42:21,231 basehttp 6688 1012 "GET /api/orders/31/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:42:57,454 basehttp 6688 184 "PUT /api/orders/31/pay/ HTTP/1.1" 200 16
+INFO 2024-08-10 14:42:57,565 basehttp 6688 23488 "GET /api/orders/31/ HTTP/1.1" 200 602
+INFO 2024-08-10 14:43:02,327 basehttp 6688 3300 "GET /admin/base/product/ HTTP/1.1" 200 11462
+INFO 2024-08-10 14:43:02,397 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:04,081 basehttp 6688 3300 "GET /admin/base/orderitem/ HTTP/1.1" 200 15294
+INFO 2024-08-10 14:43:04,135 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:04,970 basehttp 6688 3300 "GET /admin/base/orderitem/ HTTP/1.1" 200 15294
+INFO 2024-08-10 14:43:05,028 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:05,994 basehttp 6688 3300 "GET /admin/base/order/ HTTP/1.1" 200 9897
+INFO 2024-08-10 14:43:06,041 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:06,402 basehttp 6688 3300 "GET /admin/base/order/ HTTP/1.1" 200 9897
+INFO 2024-08-10 14:43:06,461 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:06,998 basehttp 6688 3300 "GET /admin/base/order/ HTTP/1.1" 200 9897
+INFO 2024-08-10 14:43:07,063 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:07,935 basehttp 6688 3300 "GET /admin/base/orderitem/ HTTP/1.1" 200 15294
+INFO 2024-08-10 14:43:08,008 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:16,280 basehttp 6688 15812 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:16,300 basehttp 6688 15008 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:17,510 basehttp 6688 3300 "GET /admin/base/orderitem/ HTTP/1.1" 200 15294
+INFO 2024-08-10 14:43:17,565 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:20,400 basehttp 6688 3300 "GET /admin/base/order/ HTTP/1.1" 200 9897
+INFO 2024-08-10 14:43:20,452 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:20,882 basehttp 6688 3300 "GET /admin/base/order/ HTTP/1.1" 200 9897
+INFO 2024-08-10 14:43:20,960 basehttp 6688 3300 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-10 14:43:24,956 basehttp 6688 12820 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 14:43:24,966 basehttp 6688 9096 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 14:43:28,022 basehttp 6688 21592 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:28,039 basehttp 6688 10248 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:28,864 basehttp 6688 16364 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 14:43:28,887 basehttp 6688 5288 "GET /api/products/2 HTTP/1.1" 200 416
+INFO 2024-08-10 14:43:29,781 basehttp 6688 4288 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:29,799 basehttp 6688 7832 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:30,526 basehttp 6688 18812 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:43:30,556 basehttp 6688 3480 "GET /api/products/3 HTTP/1.1" 200 415
+INFO 2024-08-10 14:43:31,546 basehttp 6688 9056 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:31,560 basehttp 6688 15120 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:34,069 basehttp 6688 3036 "GET /api/products/4 HTTP/1.1" 200 398
+INFO 2024-08-10 14:43:34,079 basehttp 6688 8940 "GET /api/products/4 HTTP/1.1" 200 398
+INFO 2024-08-10 14:43:37,719 basehttp 6688 21680 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:37,734 basehttp 6688 10844 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:39,103 basehttp 6688 20952 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 14:43:39,117 basehttp 6688 17184 "GET /api/products/5 HTTP/1.1" 200 425
+INFO 2024-08-10 14:43:42,304 basehttp 6688 20368 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:42,320 basehttp 6688 23204 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:43,794 basehttp 6688 20936 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:43:43,809 basehttp 6688 19996 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:43:47,925 basehttp 6688 21508 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:43:47,951 basehttp 6688 4912 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:43:49,994 basehttp 6688 8468 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:50,011 basehttp 6688 8660 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 14:43:52,436 basehttp 6688 19736 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:43:52,447 basehttp 6688 11604 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:43:57,248 basehttp 6688 13908 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:43:57,262 basehttp 6688 3188 "GET /api/products/6 HTTP/1.1" 200 407
+INFO 2024-08-10 14:44:03,025 basehttp 6688 21240 "POST /api/orders/add/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:44:03,074 basehttp 6688 18860 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:44:03,088 basehttp 6688 13320 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:44:24,480 basehttp 6688 12232 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:44:24,492 basehttp 6688 7248 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:44:40,368 basehttp 6688 1852 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:44:40,382 basehttp 6688 3332 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 14:47:28,132 basehttp 6688 13388 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:05:54,798 basehttp 6688 21816 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:05:54,812 basehttp 6688 1896 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:03,227 basehttp 6688 13060 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:03,253 basehttp 6688 4976 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:11,003 basehttp 6688 24288 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:11,017 basehttp 6688 19260 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:28,239 basehttp 6688 24088 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:28,258 basehttp 6688 18312 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:38,595 basehttp 6688 1084 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:38,609 basehttp 6688 12232 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:48,010 basehttp 6688 3724 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:48,026 basehttp 6688 6808 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:50,858 basehttp 6688 13576 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:06:50,872 basehttp 6688 5004 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:07:00,921 basehttp 6688 12492 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:07:00,937 basehttp 6688 11316 "GET /api/orders/32/ HTTP/1.1" 200 578
+INFO 2024-08-10 15:07:15,615 basehttp 6688 9524 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 15:07:15,636 basehttp 6688 13588 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-10 15:07:17,339 basehttp 6688 15796 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 15:07:17,351 basehttp 6688 4320 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 15:07:18,746 basehttp 6688 21208 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 15:07:18,756 basehttp 6688 12216 "GET /api/products/1 HTTP/1.1" 200 468
+INFO 2024-08-10 15:07:24,792 basehttp 6688 5816 "POST /api/orders/add/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:07:24,844 basehttp 6688 364 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:07:24,863 basehttp 6688 12748 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:08:58,257 basehttp 6688 9784 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:08:58,270 basehttp 6688 23980 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:09:30,415 basehttp 6688 18856 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:09:30,429 basehttp 6688 20452 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:10:53,390 basehttp 6688 1192 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:10:53,405 basehttp 6688 3404 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:11:01,025 basehttp 6688 15984 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:11:01,041 basehttp 6688 17460 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:11:14,658 basehttp 6688 5808 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:11:14,670 basehttp 6688 9644 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:15:18,011 basehttp 6688 18720 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:15:18,024 basehttp 6688 19996 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:16:01,401 basehttp 6688 4728 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-10 15:16:01,417 basehttp 6688 12064 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 14:45:11,065 autoreload 6688 12324 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-11 14:45:12,531 autoreload 18712 8944 Watching for file changes with StatReloader
+INFO 2024-08-11 14:45:25,328 autoreload 18712 8944 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-11 14:45:26,297 autoreload 7240 20680 Watching for file changes with StatReloader
+INFO 2024-08-11 14:45:30,403 autoreload 7240 20680 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-11 14:45:31,516 autoreload 14028 7312 Watching for file changes with StatReloader
+INFO 2024-08-11 14:45:53,856 autoreload 14028 7312 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-11 14:45:54,763 autoreload 21892 24904 Watching for file changes with StatReloader
+INFO 2024-08-11 14:46:17,236 autoreload 21892 24904 C:\Users\Claire\ecommerce\backend\base\views\order_views.py changed, reloading.
+INFO 2024-08-11 14:46:18,316 autoreload 27212 11280 Watching for file changes with StatReloader
+INFO 2024-08-11 14:46:57,878 autoreload 27212 11280 C:\Users\Claire\ecommerce\backend\base\urls\order_urls.py changed, reloading.
+INFO 2024-08-11 14:46:59,042 autoreload 18516 16400 Watching for file changes with StatReloader
+INFO 2024-08-11 14:47:04,248 autoreload 18516 16400 C:\Users\Claire\ecommerce\backend\base\urls\order_urls.py changed, reloading.
+INFO 2024-08-11 14:47:05,332 autoreload 2144 21124 Watching for file changes with StatReloader
+INFO 2024-08-11 14:47:26,692 autoreload 2144 21124 C:\Users\Claire\ecommerce\backend\base\urls\order_urls.py changed, reloading.
+INFO 2024-08-11 14:47:27,683 autoreload 28324 20476 Watching for file changes with StatReloader
+INFO 2024-08-11 14:47:41,562 autoreload 28324 20476 C:\Users\Claire\ecommerce\backend\base\urls\order_urls.py changed, reloading.
+INFO 2024-08-11 14:47:42,721 autoreload 23300 15812 Watching for file changes with StatReloader
+INFO 2024-08-11 14:48:43,170 basehttp 23300 20344 "GET /api/users HTTP/1.1" 301 0
+INFO 2024-08-11 14:48:43,218 basehttp 23300 27684 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-11 14:49:55,893 log 23300 27740 Method Not Allowed: /api/users/login/
+WARNING 2024-08-11 14:49:55,895 basehttp 23300 27740 "GET /api/users/login/ HTTP/1.1" 405 7621
+INFO 2024-08-11 14:49:56,041 basehttp 23300 5040 "GET /static/rest_framework/css/default.css HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,041 basehttp 23300 25516 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,041 basehttp 23300 17036 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,042 basehttp 23300 27740 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,043 basehttp 23300 28528 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,046 basehttp 23300 15724 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,048 basehttp 23300 17036 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,049 basehttp 23300 5040 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,049 basehttp 23300 25516 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,051 basehttp 23300 27740 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,052 basehttp 23300 28528 "GET /static/rest_framework/js/default.js HTTP/1.1" 304 0
+INFO 2024-08-11 14:49:56,065 basehttp 23300 28528 "GET /static/rest_framework/img/grid.png HTTP/1.1" 304 0
+INFO 2024-08-11 14:50:04,571 basehttp 23300 28528 "POST /api/users/login/ HTTP/1.1" 200 8625
+WARNING 2024-08-11 14:50:15,517 log 23300 28528 Unauthorized: /api/users/login/
+WARNING 2024-08-11 14:50:15,518 basehttp 23300 28528 "POST /api/users/login/ HTTP/1.1" 401 7701
+WARNING 2024-08-11 14:50:19,510 log 23300 28528 Unauthorized: /api/users/login/
+WARNING 2024-08-11 14:50:19,511 basehttp 23300 28528 "POST /api/users/login/ HTTP/1.1" 401 7701
+INFO 2024-08-11 14:50:31,117 basehttp 23300 28528 "POST /api/users/login/ HTTP/1.1" 200 8625
+INFO 2024-08-11 14:50:45,611 basehttp 23300 28528 "GET /admin/base/order/ HTTP/1.1" 200 10522
+INFO 2024-08-11 14:50:45,737 basehttp 23300 28528 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-11 14:51:23,010 basehttp 23300 23644 "GET /api/users HTTP/1.1" 301 0
+INFO 2024-08-11 14:51:23,018 basehttp 23300 6104 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-11 14:51:24,330 basehttp 23300 6104 "GET /api/users HTTP/1.1" 301 0
+INFO 2024-08-11 14:51:24,338 basehttp 23300 16296 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-11 14:51:35,543 log 23300 16296 Not Found: /api/myorders
+WARNING 2024-08-11 14:51:35,544 basehttp 23300 16296 "GET /api/myorders HTTP/1.1" 404 2575
+INFO 2024-08-11 14:52:05,237 basehttp 23300 16296 "GET /api/orders/myorders HTTP/1.1" 301 0
+INFO 2024-08-11 14:52:05,284 basehttp 23300 16840 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 14:52:05,646 basehttp 23300 16840 "GET /api/orders/myorders HTTP/1.1" 301 0
+INFO 2024-08-11 14:52:05,686 basehttp 23300 4196 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 14:53:46,947 autoreload 23300 15812 C:\Users\Claire\ecommerce\backend\base\urls\order_urls.py changed, reloading.
+INFO 2024-08-11 14:53:48,210 autoreload 13136 27452 Watching for file changes with StatReloader
+INFO 2024-08-11 14:55:07,414 basehttp 13136 23388 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 14:55:07,438 basehttp 13136 2496 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:06:56,749 basehttp 13136 24508 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:06:56,780 basehttp 13136 18808 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:07:16,120 basehttp 13136 21380 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:07:16,148 basehttp 13136 23940 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:08:23,216 basehttp 13136 28064 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:08:23,232 basehttp 13136 3412 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:08:58,534 basehttp 13136 25088 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:08:58,553 basehttp 13136 2308 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:09:06,455 basehttp 13136 1996 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:09:06,475 basehttp 13136 19400 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:09:20,979 basehttp 13136 28116 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:09:20,996 basehttp 13136 17756 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:09:50,443 basehttp 13136 28220 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:09:50,474 basehttp 13136 22028 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:09:59,241 basehttp 13136 176 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:09:59,259 basehttp 13136 16640 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:10:37,586 basehttp 13136 6160 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:10:37,610 basehttp 13136 23912 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:11:12,620 basehttp 13136 11980 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:11:12,648 basehttp 13136 27052 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:11:35,770 basehttp 13136 24188 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:11:35,792 basehttp 13136 22032 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:11:40,662 basehttp 13136 16192 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:11:40,677 basehttp 13136 4292 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:12:00,649 basehttp 13136 19384 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:12:00,671 basehttp 13136 21992 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:12:23,379 basehttp 13136 27196 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:12:23,400 basehttp 13136 12860 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:13:03,765 basehttp 13136 13220 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:13:03,785 basehttp 13136 19452 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:13:44,931 basehttp 13136 3436 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:13:44,949 basehttp 13136 26576 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:14:10,260 basehttp 13136 25660 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:14:10,286 basehttp 13136 9968 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:15:14,973 basehttp 13136 27176 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:15:14,991 basehttp 13136 26148 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:18:47,238 basehttp 13136 22524 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:18:47,256 basehttp 13136 3592 "GET /api/orders/33/ HTTP/1.1" 200 588
+INFO 2024-08-11 15:21:25,705 basehttp 13136 17356 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-11 15:21:25,729 basehttp 13136 21948 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-11 15:21:31,879 basehttp 13136 18816 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:21:31,897 basehttp 13136 1856 "GET /api/users/profile HTTP/1.1" 301 0
+INFO 2024-08-11 15:21:31,926 basehttp 13136 27672 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:21:31,927 basehttp 13136 1204 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:21:31,947 basehttp 13136 23248 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:21:31,967 basehttp 13136 18444 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:21:31,969 basehttp 13136 13600 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:22:30,466 basehttp 13136 14088 "POST /api/users/login/ HTTP/1.1" 200 819
+INFO 2024-08-11 15:22:30,569 basehttp 13136 25684 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-11 15:22:30,590 basehttp 13136 24740 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-11 15:29:58,685 basehttp 13136 15600 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:29:58,704 basehttp 13136 27856 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:29:58,736 basehttp 13136 12404 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:29:58,751 basehttp 13136 27652 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:29:58,776 basehttp 13136 13404 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:29:58,791 basehttp 13136 21420 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:32:37,991 basehttp 13136 21656 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:32:38,021 basehttp 13136 26628 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:32:38,039 basehttp 13136 1040 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:32:38,076 basehttp 13136 9048 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:32:38,179 basehttp 13136 20848 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:32:38,198 basehttp 13136 24328 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:33:01,883 basehttp 13136 22524 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:33:01,912 basehttp 13136 10644 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:33:01,915 basehttp 13136 18928 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:33:01,927 basehttp 13136 15812 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:33:01,944 basehttp 13136 21264 "GET /api/orders/myorders/ HTTP/1.1" 200 1772
+INFO 2024-08-11 15:33:01,944 basehttp 13136 17368 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:34:33,808 autoreload 13136 27452 C:\Users\Claire\ecommerce\backend\base\models.py changed, reloading.
+INFO 2024-08-11 15:34:34,972 autoreload 24776 4048 Watching for file changes with StatReloader
+INFO 2024-08-11 15:34:41,283 basehttp 24776 16800 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:34:41,299 basehttp 24776 24988 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:34:41,322 basehttp 24776 24328 "GET /api/users/profile/ HTTP/1.1" 200 98
+ERROR 2024-08-11 15:34:41,377 log 24776 24336 Internal Server Error: /api/orders/myorders/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: base_order.deliveredAt
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 83, in getMyOrders
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: base_order.deliveredAt
+ERROR 2024-08-11 15:34:41,424 basehttp 24776 24336 "GET /api/orders/myorders/ HTTP/1.1" 500 181600
+ERROR 2024-08-11 15:34:41,539 log 24776 12364 Internal Server Error: /api/orders/myorders/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: base_order.deliveredAt
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 83, in getMyOrders
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: base_order.deliveredAt
+ERROR 2024-08-11 15:34:41,585 basehttp 24776 12364 "GET /api/orders/myorders/ HTTP/1.1" 500 181600
+ERROR 2024-08-11 15:34:41,679 log 24776 25324 Internal Server Error: /api/orders/myorders/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: base_order.deliveredAt
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 83, in getMyOrders
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: base_order.deliveredAt
+ERROR 2024-08-11 15:34:41,698 basehttp 24776 25324 "GET /api/orders/myorders/ HTTP/1.1" 500 181600
+INFO 2024-08-11 15:37:38,457 basehttp 24776 9848 "GET /api/users/profile/ HTTP/1.1" 200 98
+ERROR 2024-08-11 15:37:38,520 log 24776 16296 Internal Server Error: /api/orders/myorders/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: base_order.deliveredAt
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 83, in getMyOrders
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: base_order.deliveredAt
+INFO 2024-08-11 15:37:38,529 basehttp 24776 15724 "GET /api/users/profile/ HTTP/1.1" 200 98
+ERROR 2024-08-11 15:37:38,544 basehttp 24776 16296 "GET /api/orders/myorders/ HTTP/1.1" 500 181600
+ERROR 2024-08-11 15:37:38,642 log 24776 11004 Internal Server Error: /api/orders/myorders/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: base_order.deliveredAt
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 83, in getMyOrders
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: base_order.deliveredAt
+INFO 2024-08-11 15:37:38,651 basehttp 24776 13256 "GET /api/users/profile/ HTTP/1.1" 200 98
+ERROR 2024-08-11 15:37:38,664 basehttp 24776 11004 "GET /api/orders/myorders/ HTTP/1.1" 500 181600
+ERROR 2024-08-11 15:37:38,752 log 24776 16744 Internal Server Error: /api/orders/myorders/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: no such column: base_order.deliveredAt
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\order_views.py", line 83, in getMyOrders
+    return Response(serializer.data)
+                    ^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 795, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 249, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\serializers.py", line 713, in to_representation
+    return [
+           ^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 400, in __iter__
+    self._fetch_all()
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 1928, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 91, in __iter__
+    results = compiler.execute_sql(
+              ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\sql\compiler.py", line 1562, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 122, in execute
+    return super().execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 79, in execute
+    return self._execute_with_wrappers(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 92, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 100, in _execute
+    with self.db.wrap_database_errors:
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\utils.py", line 105, in _execute
+    return self.cursor.execute(sql, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\backends\sqlite3\base.py", line 329, in execute
+    return super().execute(query, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+django.db.utils.OperationalError: no such column: base_order.deliveredAt
+ERROR 2024-08-11 15:37:38,800 basehttp 24776 16744 "GET /api/orders/myorders/ HTTP/1.1" 500 181600
+INFO 2024-08-11 15:39:48,057 autoreload 25520 20640 Watching for file changes with StatReloader
+INFO 2024-08-11 15:39:51,440 basehttp 25520 24056 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:39:51,461 basehttp 25520 14932 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:39:51,484 basehttp 25520 27240 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 15:39:51,520 basehttp 25520 20528 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 15:39:51,569 basehttp 25520 16936 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:39:51,569 basehttp 25520 17368 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 15:43:16,443 basehttp 25520 3364 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 15:43:16,492 basehttp 25520 26704 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 15:43:16,513 basehttp 25520 25780 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:43:16,542 basehttp 25520 26224 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 15:43:16,564 basehttp 25520 25540 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 15:43:16,575 basehttp 25520 8216 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:11:27,643 basehttp 25520 880 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:11:27,684 basehttp 25520 23976 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:11:27,688 basehttp 25520 14016 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:11:27,727 basehttp 25520 26852 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:11:27,831 basehttp 25520 29596 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:11:27,873 basehttp 25520 27920 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:12:28,088 basehttp 25520 29640 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:12:28,121 basehttp 25520 25832 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:12:28,138 basehttp 25520 29428 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:12:28,181 basehttp 25520 13480 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:12:28,181 basehttp 25520 25980 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:12:28,200 basehttp 25520 19552 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:14:24,092 basehttp 25520 7248 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-11 17:14:24,122 basehttp 25520 25528 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-11 17:14:34,585 basehttp 25520 18168 "GET /api/orders/32/ HTTP/1.1" 200 577
+INFO 2024-08-11 17:14:34,614 basehttp 25520 28588 "GET /api/orders/32/ HTTP/1.1" 200 577
+INFO 2024-08-11 17:14:45,364 basehttp 25520 20600 "GET /api/orders/33/ HTTP/1.1" 200 587
+INFO 2024-08-11 17:14:45,386 basehttp 25520 27848 "GET /api/orders/33/ HTTP/1.1" 200 587
+INFO 2024-08-11 17:17:19,855 basehttp 25520 18948 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:17:19,876 basehttp 25520 21344 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:17:19,917 basehttp 25520 22420 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:17:19,926 basehttp 25520 24800 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:17:19,953 basehttp 25520 16120 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:17:19,965 basehttp 25520 23564 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:19:09,553 basehttp 25520 26432 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:19:09,590 basehttp 25520 21812 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:19:09,609 basehttp 25520 15564 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:19:09,642 basehttp 25520 29448 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-11 17:19:09,660 basehttp 25520 27704 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-11 17:19:09,669 basehttp 25520 23628 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-12 00:03:10,589 basehttp 25520 25164 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-12 00:03:10,617 basehttp 25520 32988 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-12 00:03:10,621 basehttp 25520 30804 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-12 00:03:10,662 basehttp 25520 31484 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-12 00:03:10,678 basehttp 25520 12680 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-12 00:03:10,709 basehttp 25520 21284 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-18 13:45:25,014 autoreload 21124 3816 Watching for file changes with StatReloader
+INFO 2024-08-18 13:46:19,732 basehttp 21124 3352 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 13:46:19,749 basehttp 21124 9120 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 13:47:50,252 basehttp 21124 16964 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-18 13:47:50,267 basehttp 21124 656 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-18 13:47:50,270 basehttp 21124 19460 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-18 13:47:50,286 basehttp 21124 11520 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-18 13:47:50,295 basehttp 21124 20512 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-18 13:47:50,314 basehttp 21124 11684 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-18 13:47:54,943 basehttp 21124 5068 "GET /api/orders/32/ HTTP/1.1" 200 577
+INFO 2024-08-18 13:47:54,958 basehttp 21124 23212 "GET /api/orders/32/ HTTP/1.1" 200 577
+INFO 2024-08-18 13:48:26,761 basehttp 21124 21084 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:48:26,776 basehttp 21124 21020 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:53:34,436 basehttp 21124 22260 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:53:34,451 basehttp 21124 948 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:56:05,792 basehttp 21124 22692 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:56:05,808 basehttp 21124 25240 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:56:18,153 basehttp 21124 3028 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:56:18,166 basehttp 21124 25240 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:56:26,312 basehttp 21124 24752 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:56:26,324 basehttp 21124 25012 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:57:09,464 basehttp 21124 4916 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:57:09,479 basehttp 21124 6080 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:57:48,745 basehttp 21124 1012 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:57:48,758 basehttp 21124 7200 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:58:22,737 basehttp 21124 25296 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:58:22,750 basehttp 21124 7828 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:58:36,765 basehttp 21124 1984 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:58:36,781 basehttp 21124 15628 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:59:01,556 basehttp 21124 24780 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:59:01,571 basehttp 21124 25496 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:59:22,121 basehttp 21124 10696 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 13:59:22,135 basehttp 21124 15364 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 14:00:51,442 basehttp 21124 19992 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 14:00:51,458 basehttp 21124 25396 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 14:02:35,517 basehttp 21124 24600 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 14:02:35,542 basehttp 21124 23648 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 14:03:48,976 basehttp 21124 11676 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 14:03:48,993 basehttp 21124 24076 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 14:13:27,616 basehttp 21124 21828 "GET /api/orders/31/ HTTP/1.1" 200 601
+INFO 2024-08-18 14:13:27,630 basehttp 21124 5336 "GET /api/orders/31/ HTTP/1.1" 200 601
+WARNING 2024-08-18 14:37:11,317 log 21124 16668 Unauthorized: /api/users/
+WARNING 2024-08-18 14:37:11,317 basehttp 21124 16668 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:37:11,326 log 21124 6932 Unauthorized: /api/users/
+WARNING 2024-08-18 14:37:11,327 basehttp 21124 6932 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:39:43,313 log 21124 21400 Unauthorized: /api/users/
+WARNING 2024-08-18 14:39:43,314 basehttp 21124 21400 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:39:45,770 log 21124 15472 Unauthorized: /api/users/
+WARNING 2024-08-18 14:39:45,771 basehttp 21124 15472 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:39:49,038 log 21124 26576 Unauthorized: /api/users/
+WARNING 2024-08-18 14:39:49,038 basehttp 21124 26576 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:39:49,046 log 21124 25944 Unauthorized: /api/users/
+WARNING 2024-08-18 14:39:49,048 basehttp 21124 25944 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:40:00,404 log 21124 25416 Unauthorized: /api/users/
+WARNING 2024-08-18 14:40:00,404 basehttp 21124 25416 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:40:00,425 log 21124 22536 Unauthorized: /api/users/
+WARNING 2024-08-18 14:40:00,427 basehttp 21124 22536 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:40:19,645 log 21124 24992 Unauthorized: /api/users/
+WARNING 2024-08-18 14:40:19,646 basehttp 21124 24992 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:40:19,665 log 21124 21204 Unauthorized: /api/users/
+WARNING 2024-08-18 14:40:19,666 basehttp 21124 21204 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:42:39,590 log 21124 22924 Unauthorized: /api/users/
+WARNING 2024-08-18 14:42:39,591 basehttp 21124 22924 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:42:39,603 log 21124 6984 Unauthorized: /api/users/
+WARNING 2024-08-18 14:42:39,604 basehttp 21124 6984 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:42:44,729 log 21124 6848 Unauthorized: /api/users/
+WARNING 2024-08-18 14:42:44,730 basehttp 21124 6848 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:42:44,752 log 21124 5160 Unauthorized: /api/users/
+WARNING 2024-08-18 14:42:44,753 basehttp 21124 5160 "GET /api/users/ HTTP/1.1" 401 58
+INFO 2024-08-18 14:42:46,360 basehttp 21124 996 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 14:42:46,383 basehttp 21124 23320 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 14:42:48,935 basehttp 21124 21404 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-18 14:42:48,935 basehttp 21124 8956 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+INFO 2024-08-18 14:42:48,948 basehttp 21124 11260 "GET /api/users/profile/ HTTP/1.1" 200 98
+INFO 2024-08-18 14:42:48,961 basehttp 21124 19080 "GET /api/orders/myorders/ HTTP/1.1" 200 1769
+WARNING 2024-08-18 14:42:55,808 log 21124 23172 Unauthorized: /api/users/
+WARNING 2024-08-18 14:42:55,810 basehttp 21124 23172 "GET /api/users/ HTTP/1.1" 401 58
+WARNING 2024-08-18 14:42:55,823 log 21124 25996 Unauthorized: /api/users/
+WARNING 2024-08-18 14:42:55,823 basehttp 21124 25996 "GET /api/users/ HTTP/1.1" 401 58
+INFO 2024-08-18 14:43:25,311 basehttp 21124 27344 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:43:28,005 basehttp 21124 27184 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:43:28,018 basehttp 21124 23104 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:46:12,869 autoreload 3600 3692 Watching for file changes with StatReloader
+INFO 2024-08-18 14:51:35,534 basehttp 3600 9976 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:51:35,547 basehttp 3600 13404 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:51:40,290 basehttp 3600 15152 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:52:18,331 basehttp 3600 24892 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:52:18,341 basehttp 3600 17520 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:52:23,946 basehttp 3600 23152 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:52:23,957 basehttp 3600 13216 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:54:02,305 basehttp 3600 8512 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:54:04,972 basehttp 3600 1388 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:54:04,986 basehttp 3600 20000 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:54:24,311 basehttp 3600 2852 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:54:29,538 basehttp 3600 11560 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:54:29,551 basehttp 3600 16032 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-18 14:54:57,835 log 3600 11356 Not Found: /
+WARNING 2024-08-18 14:54:57,836 basehttp 3600 11356 "GET / HTTP/1.1" 404 2521
+WARNING 2024-08-18 14:54:58,019 log 3600 11356 Not Found: /favicon.ico
+WARNING 2024-08-18 14:54:58,020 basehttp 3600 11356 "GET /favicon.ico HTTP/1.1" 404 2572
+INFO 2024-08-18 14:54:59,784 basehttp 3600 11356 "GET /admin HTTP/1.1" 301 0
+INFO 2024-08-18 14:54:59,810 basehttp 3600 5776 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-08-18 14:54:59,974 basehttp 3600 5776 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2024-08-18 14:55:00,171 basehttp 3600 5776 "GET /static/admin/css/base.css HTTP/1.1" 200 21544
+INFO 2024-08-18 14:55:00,172 basehttp 3600 25172 "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2024-08-18 14:55:00,172 basehttp 3600 3196 "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2682
+INFO 2024-08-18 14:55:00,185 basehttp 3600 3196 "GET /static/admin/css/login.css HTTP/1.1" 200 958
+INFO 2024-08-18 14:55:00,186 basehttp 3600 25172 "GET /static/admin/css/responsive.css HTTP/1.1" 200 17905
+INFO 2024-08-18 14:55:00,191 basehttp 3600 5776 "GET /static/admin/js/theme.js HTTP/1.1" 200 1943
+INFO 2024-08-18 14:55:00,205 basehttp 3600 25172 "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+WARNING 2024-08-18 14:55:01,163 log 3600 25172 Not Found: /api/admin
+WARNING 2024-08-18 14:55:01,163 basehttp 3600 25172 "GET /api/admin HTTP/1.1" 404 2566
+WARNING 2024-08-18 14:55:04,776 log 3600 25172 Not Found: /api/admin
+WARNING 2024-08-18 14:55:04,777 basehttp 3600 25172 "GET /api/admin HTTP/1.1" 404 2566
+INFO 2024-08-18 14:55:08,530 basehttp 3600 25172 "GET /admin/ HTTP/1.1" 302 0
+INFO 2024-08-18 14:55:08,537 basehttp 3600 25172 "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2024-08-18 14:55:10,834 basehttp 3600 25172 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4318
+INFO 2024-08-18 14:55:17,015 basehttp 3600 25172 "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4318
+INFO 2024-08-18 14:55:24,083 basehttp 3600 25172 "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2024-08-18 14:55:24,125 basehttp 3600 25172 "GET /admin/ HTTP/1.1" 200 11396
+INFO 2024-08-18 14:55:24,171 basehttp 3600 25172 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-08-18 14:55:24,190 basehttp 3600 3196 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-08-18 14:55:24,190 basehttp 3600 25172 "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+INFO 2024-08-18 14:55:24,190 basehttp 3600 5776 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-08-18 14:55:26,834 basehttp 3600 5776 "GET /admin/auth/user/ HTTP/1.1" 200 14882
+INFO 2024-08-18 14:55:26,898 basehttp 3600 5776 "GET /static/admin/css/changelists.css HTTP/1.1" 200 6811
+INFO 2024-08-18 14:55:26,902 basehttp 3600 3196 "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2024-08-18 14:55:26,909 basehttp 3600 8396 "GET /static/admin/js/actions.js HTTP/1.1" 200 8067
+INFO 2024-08-18 14:55:26,910 basehttp 3600 9460 "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2024-08-18 14:55:26,910 basehttp 3600 12140 "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9042
+INFO 2024-08-18 14:55:26,920 basehttp 3600 5776 "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2024-08-18 14:55:26,929 basehttp 3600 9460 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-08-18 14:55:26,932 basehttp 3600 8396 "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2024-08-18 14:55:26,935 basehttp 3600 5776 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2024-08-18 14:55:26,939 basehttp 3600 3196 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-18 14:55:26,947 basehttp 3600 8396 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-08-18 14:55:26,954 basehttp 3600 25172 "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+INFO 2024-08-18 14:55:26,976 basehttp 3600 25172 "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2024-08-18 14:55:27,005 basehttp 3600 12140 "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2024-08-18 14:55:27,035 basehttp 3600 8396 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-08-18 14:55:27,035 basehttp 3600 12140 "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+INFO 2024-08-18 14:55:27,037 basehttp 3600 25172 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-08-18 14:55:42,308 basehttp 3600 18444 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:56:04,309 basehttp 3600 7452 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:56:10,304 basehttp 3600 6800 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:56:38,310 basehttp 3600 5744 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:56:59,307 basehttp 3600 21528 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:57:34,310 basehttp 3600 15848 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:57:45,643 basehttp 3600 25276 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:57:45,655 basehttp 3600 10836 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:57:57,289 basehttp 3600 16088 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:58:02,345 basehttp 3600 15608 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:58:02,359 basehttp 3600 9376 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:58:27,779 basehttp 3600 16716 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:59:09,309 basehttp 3600 11568 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:59:12,016 basehttp 3600 13960 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:59:12,027 basehttp 3600 3408 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:59:21,349 basehttp 3600 15796 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 14:59:51,297 basehttp 3600 25124 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:00:30,313 basehttp 3600 25500 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:00:34,296 basehttp 3600 25320 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:00:37,306 basehttp 3600 17280 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:02:25,664 basehttp 3600 5016 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:02:25,677 basehttp 3600 6536 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:03:13,324 basehttp 3600 6852 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:03:13,333 basehttp 3600 14764 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:03:50,305 basehttp 3600 7244 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:03:52,578 basehttp 3600 23784 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:03:52,592 basehttp 3600 19836 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:03:57,945 basehttp 3600 11440 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:04:04,408 basehttp 3600 16408 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:04:05,842 basehttp 3600 15080 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:04:53,715 basehttp 3600 9188 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:04:53,726 basehttp 3600 1000 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:06:26,709 basehttp 3600 4336 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:06:26,724 basehttp 3600 10748 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:06:40,150 basehttp 3600 19836 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:06:50,307 basehttp 3600 9800 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:34:43,322 basehttp 3600 9412 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:34:43,334 basehttp 3600 5852 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:35:02,056 basehttp 3600 13128 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:35:02,069 basehttp 3600 25152 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:36:11,538 basehttp 3600 12868 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:36:11,550 basehttp 3600 15520 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:36:21,203 basehttp 3600 6880 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:36:21,217 basehttp 3600 15168 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:36:22,849 basehttp 3600 13500 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:36:22,858 basehttp 3600 4044 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:37:35,461 basehttp 3600 16032 "POST /api/users/login/ HTTP/1.1" 200 826
+INFO 2024-08-18 15:37:35,526 basehttp 3600 1868 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:37:35,544 basehttp 3600 18676 "GET /api/products/ HTTP/1.1" 200 2536
+WARNING 2024-08-18 15:38:06,186 log 3600 12184 Forbidden: /api/users/
+WARNING 2024-08-18 15:38:06,188 basehttp 3600 12184 "GET /api/users/ HTTP/1.1" 403 63
+WARNING 2024-08-18 15:38:06,202 log 3600 9328 Forbidden: /api/users/
+WARNING 2024-08-18 15:38:06,202 basehttp 3600 9328 "GET /api/users/ HTTP/1.1" 403 63
+INFO 2024-08-18 15:39:02,635 basehttp 3600 22860 "POST /api/users/login/ HTTP/1.1" 200 819
+INFO 2024-08-18 15:39:02,689 basehttp 3600 10360 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:39:02,706 basehttp 3600 24260 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:39:10,933 basehttp 3600 24780 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:39:10,947 basehttp 3600 4492 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:39:21,389 basehttp 3600 13720 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:39:21,402 basehttp 3600 16532 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:39:50,308 basehttp 3600 6964 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:40:07,578 basehttp 3600 8404 "GET /api/users/ HTTP/1.1" 200 639
