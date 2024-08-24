@@ -2898,3 +2898,275 @@ INFO 2024-08-18 15:39:21,389 basehttp 3600 13720 "GET /api/users/ HTTP/1.1" 200 
 INFO 2024-08-18 15:39:21,402 basehttp 3600 16532 "GET /api/users/ HTTP/1.1" 200 639
 INFO 2024-08-18 15:39:50,308 basehttp 3600 6964 "GET /api/users/ HTTP/1.1" 200 639
 INFO 2024-08-18 15:40:07,578 basehttp 3600 8404 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:41:02,315 basehttp 3600 24776 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:41:02,325 basehttp 3600 22044 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:44:46,889 basehttp 3600 11576 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:44:46,902 basehttp 3600 17800 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-18 15:45:04,277 basehttp 3600 15064 "POST /api/users/login/ HTTP/1.1" 200 826
+INFO 2024-08-18 15:45:04,333 basehttp 3600 9280 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:45:04,348 basehttp 3600 19676 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:45:25,468 basehttp 3600 6908 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:45:25,483 basehttp 3600 23820 "GET /api/products/ HTTP/1.1" 200 2536
+WARNING 2024-08-18 15:46:37,623 log 3600 1552 Unauthorized: /api/users/login/
+WARNING 2024-08-18 15:46:37,624 basehttp 3600 1552 "POST /api/users/login/ HTTP/1.1" 401 63
+INFO 2024-08-18 15:46:40,729 basehttp 3600 23576 "POST /api/users/login/ HTTP/1.1" 200 819
+INFO 2024-08-18 15:46:40,797 basehttp 3600 17288 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:46:40,812 basehttp 3600 9664 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-18 15:50:02,529 autoreload 3600 3692 C:\Users\Claire\ecommerce\backend\base\views\user_views.py changed, reloading.
+INFO 2024-08-18 15:50:03,364 autoreload 8448 20756 Watching for file changes with StatReloader
+INFO 2024-08-18 15:50:23,135 autoreload 8448 20756 C:\Users\Claire\ecommerce\backend\base\views\user_views.py changed, reloading.
+INFO 2024-08-18 15:50:23,885 autoreload 18480 10888 Watching for file changes with StatReloader
+INFO 2024-08-18 15:50:25,655 autoreload 18480 10888 C:\Users\Claire\ecommerce\backend\base\views\user_views.py changed, reloading.
+INFO 2024-08-18 15:50:26,590 autoreload 2152 5680 Watching for file changes with StatReloader
+INFO 2024-08-18 15:50:45,260 autoreload 2152 5680 C:\Users\Claire\ecommerce\backend\base\views\user_views.py changed, reloading.
+INFO 2024-08-18 15:50:46,135 autoreload 23896 11624 Watching for file changes with StatReloader
+INFO 2024-08-18 15:51:41,001 autoreload 23896 11624 C:\Users\Claire\ecommerce\backend\base\views\user_views.py changed, reloading.
+INFO 2024-08-18 15:51:41,643 autoreload 2148 18816 Watching for file changes with StatReloader
+INFO 2024-08-18 15:51:52,903 autoreload 2148 18816 C:\Users\Claire\ecommerce\backend\base\views\user_views.py changed, reloading.
+INFO 2024-08-18 15:51:53,668 autoreload 5732 13028 Watching for file changes with StatReloader
+INFO 2024-08-18 15:52:01,848 autoreload 5732 13028 C:\Users\Claire\ecommerce\backend\base\views\user_views.py changed, reloading.
+INFO 2024-08-18 15:52:02,645 autoreload 12676 2556 Watching for file changes with StatReloader
+INFO 2024-08-18 15:52:25,597 autoreload 12676 2556 C:\Users\Claire\ecommerce\backend\base\urls\user_urls.py changed, reloading.
+INFO 2024-08-18 15:52:26,230 autoreload 2572 4532 Watching for file changes with StatReloader
+INFO 2024-08-18 15:52:34,191 autoreload 2572 4532 C:\Users\Claire\ecommerce\backend\base\urls\user_urls.py changed, reloading.
+INFO 2024-08-18 15:52:34,877 autoreload 20988 22636 Watching for file changes with StatReloader
+INFO 2024-08-24 13:44:08,634 autoreload 28524 29720 Watching for file changes with StatReloader
+INFO 2024-08-24 13:47:02,069 autoreload 28524 29720 C:\Users\Claire\ecommerce\backend\base\urls\user_urls.py changed, reloading.
+INFO 2024-08-24 13:47:02,779 autoreload 10492 34884 Watching for file changes with StatReloader
+INFO 2024-08-24 13:47:03,091 basehttp 10492 11628 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-24 13:47:03,111 basehttp 10492 1784 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-24 13:48:22,003 autoreload 10492 34884 C:\Users\Claire\ecommerce\backend\base\urls\user_urls.py changed, reloading.
+INFO 2024-08-24 13:48:22,768 autoreload 35612 13940 Watching for file changes with StatReloader
+INFO 2024-08-24 13:48:59,145 autoreload 35612 13940 C:\Users\Claire\ecommerce\backend\base\urls\user_urls.py changed, reloading.
+INFO 2024-08-24 13:48:59,994 autoreload 1932 9156 Watching for file changes with StatReloader
+INFO 2024-08-24 13:56:05,824 autoreload 1932 9156 C:\Users\Claire\ecommerce\backend\base\views\user_views.py changed, reloading.
+INFO 2024-08-24 13:56:06,528 autoreload 23052 9244 Watching for file changes with StatReloader
+INFO 2024-08-24 14:09:32,903 autoreload 34188 35184 Watching for file changes with StatReloader
+INFO 2024-08-24 14:09:48,690 basehttp 34188 11236 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-24 14:09:48,706 basehttp 34188 33000 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-24 14:10:39,971 basehttp 34188 29576 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:10:39,982 basehttp 34188 18188 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:13:12,953 basehttp 34188 34376 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:13:19,788 basehttp 34188 26032 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:13:43,785 basehttp 34188 23828 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:13:53,942 basehttp 34188 18120 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:14:06,776 basehttp 34188 2708 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:14:23,777 basehttp 34188 29488 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:14:30,841 basehttp 34188 33984 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:14:34,844 basehttp 34188 10512 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:14:38,784 basehttp 34188 34416 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:14:56,797 basehttp 34188 2132 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:15:36,788 basehttp 34188 16396 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:16:21,784 basehttp 34188 5420 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:16:21,798 basehttp 34188 34980 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:16:26,777 basehttp 34188 17208 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:16:30,775 basehttp 34188 16932 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:16:33,785 basehttp 34188 26996 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:16:39,783 basehttp 34188 21360 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:16:50,778 basehttp 34188 32884 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:17:00,777 basehttp 34188 10964 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:17:05,782 basehttp 34188 8072 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:17:21,883 basehttp 34188 26144 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:18:09,777 basehttp 34188 29476 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:18:12,332 basehttp 34188 10816 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:18:12,345 basehttp 34188 3176 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-24 14:19:23,062 log 34188 11144 Not Found: /api/users/delete/14/
+WARNING 2024-08-24 14:19:23,063 basehttp 34188 11144 "DELETE /api/users/delete/14/ HTTP/1.1" 404 3621
+WARNING 2024-08-24 14:19:24,069 log 34188 27884 Not Found: /api/users/delete/14/
+WARNING 2024-08-24 14:19:24,070 basehttp 34188 27884 "DELETE /api/users/delete/14/ HTTP/1.1" 404 3621
+INFO 2024-08-24 14:19:34,446 basehttp 34188 7364 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:19:34,457 basehttp 34188 30732 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-24 14:20:12,131 log 34188 14612 Not Found: /api/users/delete/6/
+WARNING 2024-08-24 14:20:12,132 basehttp 34188 14612 "DELETE /api/users/delete/6/ HTTP/1.1" 404 3618
+INFO 2024-08-24 14:20:21,616 basehttp 34188 31840 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:21:16,806 basehttp 34188 8796 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:21:19,103 basehttp 34188 6528 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:21:19,132 basehttp 34188 3316 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-24 14:21:20,644 log 34188 33296 Not Found: /api/users/delete/14/
+WARNING 2024-08-24 14:21:20,644 basehttp 34188 33296 "DELETE /api/users/delete/14/ HTTP/1.1" 404 3621
+INFO 2024-08-24 14:22:32,770 basehttp 34188 6784 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:22:32,784 basehttp 34188 27764 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:22:36,394 basehttp 34188 21484 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:22:36,405 basehttp 34188 26392 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-24 14:22:38,895 log 34188 32620 Not Found: /api/users/delete/6/
+WARNING 2024-08-24 14:22:38,896 basehttp 34188 32620 "DELETE /api/users/delete/6/ HTTP/1.1" 404 3618
+INFO 2024-08-24 14:23:56,406 basehttp 34188 35616 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:23:56,418 basehttp 34188 5756 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:24:23,766 autoreload 34188 35184 C:\Users\Claire\ecommerce\backend\base\urls\user_urls.py changed, reloading.
+INFO 2024-08-24 14:24:24,464 autoreload 14416 7960 Watching for file changes with StatReloader
+WARNING 2024-08-24 14:25:52,743 log 14416 21576 Not Found: /api/users/delete/14/
+WARNING 2024-08-24 14:25:52,744 basehttp 14416 21576 "DELETE /api/users/delete/14/ HTTP/1.1" 404 3621
+INFO 2024-08-24 14:32:25,800 basehttp 14416 27392 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:32:36,780 basehttp 14416 21536 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:32:48,807 basehttp 14416 33332 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:32:49,985 basehttp 14416 7900 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:32:59,182 basehttp 14416 11056 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:32:59,197 basehttp 14416 1664 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-24 14:33:02,552 log 14416 16652 Not Found: /api/users/delete/14/
+WARNING 2024-08-24 14:33:02,553 basehttp 14416 16652 "DELETE /api/users/delete/14/ HTTP/1.1" 404 3621
+WARNING 2024-08-24 14:34:01,514 log 14416 30784 Unauthorized: /api/users/profile/
+WARNING 2024-08-24 14:34:01,515 basehttp 14416 30784 "GET /api/users/profile/ HTTP/1.1" 401 183
+INFO 2024-08-24 14:34:13,795 basehttp 14416 30784 "GET /api/users HTTP/1.1" 301 0
+INFO 2024-08-24 14:34:13,805 basehttp 14416 27000 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:34:24,420 basehttp 14416 27000 "GET /api/users/profile/ HTTP/1.1" 200 98
+WARNING 2024-08-24 14:35:08,956 log 14416 7284 Not Found: /
+WARNING 2024-08-24 14:35:08,956 basehttp 14416 7284 "GET / HTTP/1.1" 404 2521
+WARNING 2024-08-24 14:35:13,218 log 14416 7284 Unauthorized: /api/users/
+WARNING 2024-08-24 14:35:13,219 basehttp 14416 7284 "GET /api/users/ HTTP/1.1" 401 5039
+INFO 2024-08-24 14:35:13,510 basehttp 14416 24968 "GET /static/rest_framework/css/bootstrap-tweaks.css HTTP/1.1" 200 3426
+INFO 2024-08-24 14:35:13,514 basehttp 14416 24968 "GET /static/rest_framework/js/csrf.js HTTP/1.1" 200 1793
+INFO 2024-08-24 14:35:13,517 basehttp 14416 24968 "GET /static/rest_framework/js/bootstrap.min.js HTTP/1.1" 200 39680
+INFO 2024-08-24 14:35:13,521 basehttp 14416 24968 "GET /static/rest_framework/js/prettify-min.js HTTP/1.1" 200 13632
+INFO 2024-08-24 14:35:13,524 basehttp 14416 24968 "GET /static/rest_framework/js/default.js HTTP/1.1" 200 1268
+INFO 2024-08-24 14:35:13,529 basehttp 14416 24968 "GET /static/rest_framework/js/load-ajax-form.js HTTP/1.1" 200 59
+INFO 2024-08-24 14:35:13,529 basehttp 14416 25584 "GET /static/rest_framework/js/ajax-form.js HTTP/1.1" 200 3796
+INFO 2024-08-24 14:35:13,542 basehttp 14416 7284 "GET /static/rest_framework/css/bootstrap.min.css HTTP/1.1" 200 121457
+INFO 2024-08-24 14:35:13,547 basehttp 14416 14808 "GET /static/rest_framework/css/prettify.css HTTP/1.1" 200 817
+INFO 2024-08-24 14:35:13,547 basehttp 14416 35068 "GET /static/rest_framework/css/default.css HTTP/1.1" 200 1152
+INFO 2024-08-24 14:35:13,548 basehttp 14416 24488 "GET /static/rest_framework/js/jquery-3.7.1.min.js HTTP/1.1" 200 87533
+INFO 2024-08-24 14:35:13,556 basehttp 14416 35068 "GET /static/rest_framework/img/grid.png HTTP/1.1" 200 1458
+INFO 2024-08-24 14:35:17,980 basehttp 14416 35068 "GET /admin/ HTTP/1.1" 200 11396
+INFO 2024-08-24 14:35:18,058 basehttp 14416 35068 "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2024-08-24 14:35:18,069 basehttp 14416 24488 "GET /static/admin/img/icon-deletelink.svg HTTP/1.1" 200 392
+INFO 2024-08-24 14:35:18,069 basehttp 14416 35068 "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2024-08-24 14:35:21,340 basehttp 14416 35068 "GET /admin/auth/user/ HTTP/1.1" 200 14882
+INFO 2024-08-24 14:35:21,402 basehttp 14416 35068 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-24 14:35:21,404 basehttp 14416 24488 "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2024-08-24 14:35:21,405 basehttp 14416 14808 "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2024-08-24 14:35:21,413 basehttp 14416 14808 "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2024-08-24 14:35:21,446 basehttp 14416 14808 "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2024-08-24 14:35:21,446 basehttp 14416 24488 "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+INFO 2024-08-24 14:35:26,138 basehttp 14416 24488 "GET /admin/auth/user/14/change/ HTTP/1.1" 200 23571
+INFO 2024-08-24 14:35:26,194 basehttp 14416 24488 "GET /static/admin/css/forms.css HTTP/1.1" 200 9090
+INFO 2024-08-24 14:35:26,203 basehttp 14416 7284 "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2024-08-24 14:35:26,205 basehttp 14416 24488 "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2024-08-24 14:35:26,205 basehttp 14416 14808 "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2024-08-24 14:35:26,206 basehttp 14416 25584 "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15492
+INFO 2024-08-24 14:35:26,206 basehttp 14416 24968 "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2024-08-24 14:35:26,211 basehttp 14416 35068 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-24 14:35:26,211 basehttp 14416 7284 "GET /static/admin/css/widgets.css HTTP/1.1" 200 11800
+INFO 2024-08-24 14:35:26,217 basehttp 14416 7284 "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+INFO 2024-08-24 14:35:26,281 basehttp 14416 24968 "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2024-08-24 14:35:26,282 basehttp 14416 24488 "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2024-08-24 14:35:26,282 basehttp 14416 35068 "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+INFO 2024-08-24 14:35:26,282 basehttp 14416 25584 "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2024-08-24 14:35:26,282 basehttp 14416 7284 "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2024-08-24 14:35:41,171 basehttp 14416 8916 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:35:41,179 basehttp 14416 30068 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-24 14:36:01,112 log 14416 29360 Unauthorized: /api/users/login/
+WARNING 2024-08-24 14:36:01,113 basehttp 14416 29360 "POST /api/users/login/ HTTP/1.1" 401 63
+INFO 2024-08-24 14:36:06,060 basehttp 14416 27544 "POST /api/users/login/ HTTP/1.1" 200 819
+INFO 2024-08-24 14:36:06,135 basehttp 14416 28900 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-24 14:36:06,155 basehttp 14416 33572 "GET /api/products/ HTTP/1.1" 200 2536
+INFO 2024-08-24 14:36:08,432 basehttp 14416 26932 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:36:08,441 basehttp 14416 7696 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-24 14:36:11,569 log 14416 34600 Not Found: /api/users/delete/14/
+WARNING 2024-08-24 14:36:11,570 basehttp 14416 34600 "DELETE /api/users/delete/14/ HTTP/1.1" 404 3621
+INFO 2024-08-24 14:37:08,717 basehttp 14416 31364 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:37:11,392 basehttp 14416 31576 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:37:11,405 basehttp 14416 7220 "GET /api/users/ HTTP/1.1" 200 639
+WARNING 2024-08-24 14:37:13,708 log 14416 12640 Not Found: /api/users/delete/14/
+WARNING 2024-08-24 14:37:13,709 basehttp 14416 12640 "DELETE /api/users/delete/14/ HTTP/1.1" 404 3621
+INFO 2024-08-24 14:37:17,517 basehttp 14416 16628 "GET /api/users/ HTTP/1.1" 200 639
+INFO 2024-08-24 14:38:27,281 autoreload 14416 7960 C:\Users\Claire\ecommerce\backend\base\urls\user_urls.py changed, reloading.
+INFO 2024-08-24 14:38:28,001 autoreload 3904 26460 Watching for file changes with StatReloader
+INFO 2024-08-24 14:38:31,831 autoreload 3904 26460 C:\Users\Claire\ecommerce\backend\base\urls\user_urls.py changed, reloading.
+INFO 2024-08-24 14:38:32,537 autoreload 12696 5412 Watching for file changes with StatReloader
+INFO 2024-08-24 14:38:36,271 basehttp 12696 16468 "DELETE /api/users/delete/14/ HTTP/1.1" 200 18
+INFO 2024-08-24 14:38:39,733 autoreload 12696 5412 C:\Users\Claire\ecommerce\backend\base\urls\user_urls.py changed, reloading.
+INFO 2024-08-24 14:38:40,403 autoreload 32052 33256 Watching for file changes with StatReloader
+ERROR 2024-08-24 14:38:43,075 log 32052 30396 Internal Server Error: /api/users/delete/14/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\user_views.py", line 102, in deleteUser
+    userForDeletion = User.objects.get(id=pk)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2024-08-24 14:38:43,083 basehttp 32052 30396 "DELETE /api/users/delete/14/ HTTP/1.1" 500 113153
+INFO 2024-08-24 14:39:30,215 autoreload 4016 7756 Watching for file changes with StatReloader
+ERROR 2024-08-24 14:39:33,528 log 4016 24984 Internal Server Error: /api/users/delete/14/
+Traceback (most recent call last):
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\decorators\csrf.py", line 65, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 509, in dispatch
+    response = self.handle_exception(exc)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 469, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 480, in raise_uncaught_exception
+    raise exc
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\views.py", line 506, in dispatch
+    response = handler(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\rest_framework\decorators.py", line 50, in handler
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\base\views\user_views.py", line 102, in deleteUser
+    userForDeletion = User.objects.get(id=pk)
+                      ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Claire\ecommerce\backend\myenv\Lib\site-packages\django\db\models\query.py", line 649, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR 2024-08-24 14:39:33,536 basehttp 4016 24984 "DELETE /api/users/delete/14/ HTTP/1.1" 500 113153
+WARNING 2024-08-24 14:42:06,558 log 4016 29008 Not Found: /api/usersapi/users/14/
+WARNING 2024-08-24 14:42:06,559 basehttp 4016 29008 "GET /api/usersapi/users/14/ HTTP/1.1" 404 2605
+INFO 2024-08-24 14:42:32,539 basehttp 4016 29008 "GET /api/users HTTP/1.1" 301 0
+INFO 2024-08-24 14:42:32,546 basehttp 4016 9520 "GET /api/users/ HTTP/1.1" 200 537
+INFO 2024-08-24 14:42:43,748 basehttp 4016 9520 "GET /api/users HTTP/1.1" 301 0
+INFO 2024-08-24 14:42:43,755 basehttp 4016 17316 "GET /api/users/ HTTP/1.1" 200 537
+INFO 2024-08-24 14:43:01,020 basehttp 4016 17316 "GET /api/users HTTP/1.1" 301 0
+INFO 2024-08-24 14:43:01,026 basehttp 4016 11436 "GET /api/users/ HTTP/1.1" 200 537
+INFO 2024-08-24 14:44:29,685 basehttp 4016 30312 "GET /admin/auth/user/14/change/ HTTP/1.1" 302 0
+INFO 2024-08-24 14:44:29,711 basehttp 4016 30312 "GET /admin/ HTTP/1.1" 200 11564
+INFO 2024-08-24 14:44:29,819 basehttp 4016 30312 "GET /static/admin/img/icon-alert.svg HTTP/1.1" 200 504
+INFO 2024-08-24 14:44:33,184 basehttp 4016 30312 "GET /admin/auth/user/ HTTP/1.1" 200 14407
+INFO 2024-08-24 14:44:33,252 basehttp 4016 30312 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-08-24 14:44:42,585 basehttp 4016 11084 "GET /api/users/ HTTP/1.1" 200 537
+INFO 2024-08-24 14:44:42,596 basehttp 4016 29384 "GET /api/users/ HTTP/1.1" 200 537
+INFO 2024-08-24 14:44:48,857 basehttp 4016 9036 "DELETE /api/users/delete/3/ HTTP/1.1" 200 18
+INFO 2024-08-24 14:44:51,049 basehttp 4016 9132 "GET /api/users/ HTTP/1.1" 200 433
+INFO 2024-08-24 14:44:51,061 basehttp 4016 24208 "GET /api/users/ HTTP/1.1" 200 433
+INFO 2024-08-24 14:44:56,541 basehttp 4016 30312 "GET /admin/auth/user/ HTTP/1.1" 200 13930
+INFO 2024-08-24 14:44:56,585 basehttp 4016 30312 "GET /admin/jsi18n/ HTTP/1.1" 200 3342
