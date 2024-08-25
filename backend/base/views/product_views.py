@@ -16,6 +16,23 @@ def getProducts(request):
     serializer = ProductSerializer(products, many=True)
     return Response(serializer.data)
 
+@api_view(['POST'])
+def createProduct(request): #pk for primary key
+    user = request.user
+
+    product = Product.objects.create(
+        user = user,
+        name = 'Sample Name',
+        price = 0,
+        brand = 'Sample Brand',
+        countInStock = 0,
+        category = 'Sample Category',
+        description = '',
+    )
+
+    serializer = ProductSerializer(product, many=False) #just return one item so set many to false 
+    return Response(serializer.data)
+
 @api_view(['GET'])
 def getProduct(request , pk): #pk for primary key
     product = Product.objects.get(_id = pk)
@@ -23,4 +40,29 @@ def getProduct(request , pk): #pk for primary key
     return Response(serializer.data)
 
 
+@api_view(['DELETE'])
+@permission_classes([IsAdminUser])
+def deleteProduct(request , pk): #pk for primary key
+    product = Product.objects.get(_id = pk)
+    product.delete()
+    return Response('Product Deleted')
+
+
+@api_view(['PUT'])
+@permission_classes([IsAdminUser])
+def updateProduct(request , pk): #pk for primary key
+    data = request.data
+    product = Product.objects. get(_id =pk)
+
+    product.name = data['name'] #update name
+    product.price = data['price']
+    product.brand = data['brand']
+    product.countInStock = data['countInStock']
+    product.category = data['category']
+    product.description = data['description']
+
+    product.save()
+
+    serializer = ProductSerializer(product, many=False) 
+    return Response(serializer.data)
 
