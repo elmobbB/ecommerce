@@ -17,6 +17,7 @@ function CartScreen() {
 
     const cart = useSelector(state => state.cart)
     const { cartItems } = cart
+
     useEffect(() => {
         if (id) {
             dispatch(addToCart(id,qty))
@@ -67,7 +68,7 @@ function CartScreen() {
                                             as='select'
                                             value={item.qty}
                                             onChange={(e) => dispatch(addToCart(item.product,Number(e.target.value)))}>
-                                            {
+                                            {item.countInStock > 0 &&
                                                 [...Array(item.countInStock).keys()].map((x) => (
                                                     <option key={x + 1} value={x + 1}>
                                                         {x + 1}
