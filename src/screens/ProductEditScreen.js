@@ -88,7 +88,7 @@ function ProductEditScreen() {
             }
 
             const { data } = await axios.post('/api/products/upload/',formData,config)
-            console.log(data,"data@@")
+
             setImage(data)
             setUploading(false)
         } catch (error) {

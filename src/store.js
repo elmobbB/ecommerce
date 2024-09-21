@@ -2,7 +2,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import { thunk } from 'redux-thunk';//allows asynchronous actions in redux
 import { composeWithDevTools } from 'redux-devtools-extension';
 import { applyMiddleware,combineReducers,createStore } from 'redux';
-import { productListReducer,productDetailsReducer,productDeleteReducer,productUpdateReducer,productCreateReducer,productReviewCreateReducer } from './reducers/productReducers';
+import { productListReducer,productDetailsReducer,productDeleteReducer,productUpdateReducer,productCreateReducer,productReviewCreateReducer,productTopRatedReducer } from './reducers/productReducers';
 import { cartReducer } from './reducers/cartReducers';
 import { userLoginReducer,userRegisterReducer,userDetailsReducer,userUpdateProfileReducer,userListReducer,userDeleteReducer,userUpdateReducer } from './reducers/userReducers';
 import { orderCreateReducer,orderDetailsReducer,orderListMyReducer,orderPayReducer,orderListReducer,orderDeliverReducer,} from './reducers/orderReducers';
@@ -14,6 +14,8 @@ const reducer = combineReducers({  //go to dev tool and check redux state after 
     productCreate: productCreateReducer,
     productUpdate: productUpdateReducer,
     productReviewCreate: productReviewCreateReducer,
+    productTopRated: productTopRatedReducer,
+
 
     cart: cartReducer,
     userLogin: userLoginReducer,

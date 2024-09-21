@@ -4,36 +4,49 @@ import Product from '../components/Product'
 import Loader from '../components/Loader'
 import Message from '../components/Message'
 import { useDispatch,useSelector } from 'react-redux'
+import { useLocation } from 'react-router-dom';
+import Paginate from '../components/Paginate'
 
 //select certain part of state
 import { listProducts } from '../actions/productActions'
+import { useNavigate,useParams } from 'react-router-dom'
+import ProductCarousel from '../components/ProductCarousel'
 
 function HomeScreen() {
-    const dispatch = useDispatch()
-    const productList = useSelector(state => state.productList)
-    const { error,loading,products } = productList
+    const dispatch = useDispatch();
+    const productList = useSelector(state => state.productList);
+    const { error,loading,products,page,pages } = productList;
+
+    const location = useLocation(); // Get the current location
+    const queryParams = new URLSearchParams(location.search); // Get query parameters
+    const keyword = queryParams.get('keyword') || ''; // Extract the keyword
+    const page2 = queryParams.get('page') || ''; // Extract from store doesn't work
 
     useEffect(() => {
-        dispatch(listProducts())
+        dispatch(listProducts(keyword,page2))
 
-    },[dispatch])
+    },[dispatch,keyword,page2])
 
 
     return (
         <div>
-            <h1>Lastest products</h1>
+            {!keyword && <ProductCarousel />}
+            <h1>Latest products</h1>
             {loading ? (
                 <Loader />
             ) : error ? (
                 <Message variant='danger'>{error}</Message>
             ) : Array.isArray(products) ? ( // Check if products is an array
-                <Row>
-                    {products.map((product) => (
-                        <Col sm={12} md={6} lg={4} xl={3} key={product._id}>
-                            <Product product={product} />
-                        </Col>
-                    ))}
-                </Row>
+                <div>
+                    <Row>
+                        {products.map((product) => (
+                            <Col sm={12} md={6} lg={4} xl={3} key={product._id}>
+                                <Product product={product} />
+                            </Col>
+                        ))}
+                    </Row>
+                    <Paginate page={page2} pages={pages} keyword={keyword} />
+                </div>
             ) : (
                 <div>No products to display</div>
             )}
