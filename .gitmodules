@@ -1,7 +1,3 @@
 [submodule "frontend"]
 	path = frontend
-<<<<<<< HEAD
 	url = https://github.com/elmobbB/ecommerce.git
-=======
-	url = .\\frontend\\
->>>>>>> 77f21f6c543756389081f4fbb18206445b82b002
