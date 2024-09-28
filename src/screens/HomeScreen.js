@@ -20,12 +20,12 @@ function HomeScreen() {
     const location = useLocation(); // Get the current location
     const queryParams = new URLSearchParams(location.search); // Get query parameters
     const keyword = queryParams.get('keyword') || ''; // Extract the keyword
-    const page2 = queryParams.get('page') || ''; // Extract from store doesn't work
+    const currentPage = queryParams.get('page') || ''; // Extract from store doesn't work
 
     useEffect(() => {
-        dispatch(listProducts(keyword,page2))
+        dispatch(listProducts(keyword,currentPage))
 
-    },[dispatch,keyword,page2])
+    },[dispatch,keyword,currentPage])
 
 
     return (
@@ -45,7 +45,7 @@ function HomeScreen() {
                             </Col>
                         ))}
                     </Row>
-                    <Paginate page={page2} pages={pages} keyword={keyword} />
+                    <Paginate page={currentPage} pages={pages} keyword={keyword} />
                 </div>
             ) : (
                 <div>No products to display</div>

@@ -2,7 +2,7 @@ import React,{ useState,useEffect } from 'react'
 import { LinkContainer } from 'react-router-bootstrap'
 import { Table,Button,Row,Col } from 'react-bootstrap'
 import { useDispatch,useSelector } from 'react-redux';
-import { useNavigate,useParams } from 'react-router-dom'
+import { useNavigate,useParams,useLocation } from 'react-router-dom'
 import Loader from '../components/Loader';
 import Message from '../components/Message';
 import Paginate from '../components/Paginate';
@@ -28,10 +28,12 @@ function ProductListScreen() {
     const userLogin = useSelector(state => state.userLogin)
     const { userInfo } = userLogin
 
-    const queryString = window.location.search;
-    const params = new URLSearchParams(queryString);
+    // const queryString = window.location.search;
+    const location = useLocation(); // Get the current location
+
+    const params = new URLSearchParams(location.search);
     const keyword = params.get('keyword') || ''
-    const page2 = params.get('page') || ''
+    const currentPage = params.get('page') || ''
     useEffect(() => {
         dispatch({ type: PRODUCT_CREATE_RESET })
 
@@ -42,11 +44,13 @@ function ProductListScreen() {
 
         if (successCreate) {
             navigate(`/admin/product/${createdProduct._id}/edit`)
+            console.log("success")
         } else {
-            dispatch(listProducts(keyword,page2))
+            dispatch(listProducts(keyword,currentPage))
+            console.log("else")
         }
 
-    },[dispatch,navigate,userInfo,successDelete,successCreate,createdProduct,keyword,page2])
+    },[dispatch,navigate,userInfo,successDelete,successCreate,createdProduct,keyword,currentPage])
 
     const deleteHandler = (id) => {
 
@@ -131,7 +135,7 @@ function ProductListScreen() {
                                     </tbody>
                                 )}
                             </Table>
-                            <Paginate pages={pages} page={page2} isAdmin={true} />
+                            <Paginate pages={pages} page={currentPage} isAdmin={true} />
                         </div>
                     )}
         </div>
